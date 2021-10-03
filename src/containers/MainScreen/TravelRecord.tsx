@@ -151,7 +151,7 @@ const IncognitoIcon = styled.img`
 const AutoRemoveMessageLine = styled.div`
   background-color: #d9d9d9;
   text-align: center;
-  line-height: 10px;
+  line-height: 1px;
   color: rgba(0, 0, 0, 0);
 `;
 
