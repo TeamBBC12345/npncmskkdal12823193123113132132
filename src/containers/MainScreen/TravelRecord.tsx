@@ -134,8 +134,9 @@ const Msg = styled.div`
   text-align: center;
   color: rgba(0, 0, 0, 1);
   font-size: 0.875rem;
-  line-height: 500px;
   font-weight: bold;
+  position: relative;
+  top: 150px;
 `;
 
 const IncognitoIcon = styled.img`
