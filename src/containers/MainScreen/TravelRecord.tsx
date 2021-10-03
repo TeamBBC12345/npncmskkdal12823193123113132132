@@ -106,11 +106,6 @@ export const TravelRecord = () => {
           })}
         </List>
       </ContentWrapper>
-
-{/*      <AutoRemoveMessag_line>
-        
-      </AutoRemoveMessag_line>*/}
-
       <AutoRemoveMessage>
         {t("travel_record.message.auto_remove_record", {
           day: autoRemoveRecordDay,
