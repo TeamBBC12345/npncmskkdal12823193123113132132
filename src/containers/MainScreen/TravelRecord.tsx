@@ -133,7 +133,7 @@ const ContentWrapper = styled.div`
 const Msg = styled.div`
   text-align: center;
   color: rgba(0, 0, 0, 1);
-  font-size: 0.875rem;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
   top: 150px;
