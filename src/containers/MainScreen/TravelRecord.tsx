@@ -137,7 +137,7 @@ const ContentWrapper = styled.div`
 
 const Msg = styled.div`
   text-align: center;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 1);
   font-size: 0.875rem;
   line-height: 48px;
 `;
