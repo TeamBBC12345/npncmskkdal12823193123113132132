@@ -107,7 +107,7 @@ export const TravelRecord = () => {
         </List>
       </ContentWrapper>
       <AutoRemoveMessage_Line>
-      <h1>.<h1>
+      <dix>........</div>
       </AutoRemoveMessage_Line>
       <AutoRemoveMessage>
         {t("travel_record.message.auto_remove_record", {
