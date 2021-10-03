@@ -158,6 +158,6 @@ const AutoRemoveMessage = styled.div`
 const AutoRemoveMessag_line = styled.div`
   background-color: #666666;
   text-align: center;
-  line-height: 10px;
+  line-height: 30px;
   color: rgba(0, 0, 0, 0.93);
 `;
