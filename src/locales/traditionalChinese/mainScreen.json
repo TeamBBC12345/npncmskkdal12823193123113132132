@@ -58,9 +58,9 @@
     }
   },
   "bookmark": {
-    "name": "書籤",
+    "name": "收件箱",
     "message": {
-      "empty": "沒有書籤"
+      "empty": "無訊息"
     }
   }
 }
