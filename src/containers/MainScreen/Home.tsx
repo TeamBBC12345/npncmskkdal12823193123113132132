@@ -97,7 +97,7 @@ export const Home = () => {
       <Welcome>
         <Title>
           <div>{today}</div>
-          <h2>{t("home.record_your_visit")}</h2>
+          <h1>{t("home.record_your_visit")}</h1>
         </Title>
       </Welcome>
       <SliderWrapper>
