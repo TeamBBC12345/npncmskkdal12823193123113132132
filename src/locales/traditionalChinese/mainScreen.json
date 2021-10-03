@@ -23,8 +23,8 @@
     "name": "出行紀錄",
     "message": {
       "incognito_activated": "隱私模式已開啟",
-      "empty": "沒有出行紀錄",
-      "auto_remove_record": "紀錄在{{day}}天後自動刪除"
+      "empty": "沒有紀錄",
+      "auto_remove_record": "存放應用程式內的出行紀錄在{{day}}天後自動刪除。"
     }
   },
   "setting": {
