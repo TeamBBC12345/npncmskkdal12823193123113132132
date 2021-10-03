@@ -134,7 +134,8 @@ const Msg = styled.div`
   text-align: center;
   color: rgba(0, 0, 0, 1);
   font-size: 0.875rem;
-  line-height: 48px;
+  line-height: 500px;
+  font-weight: bold;
 `;
 
 const IncognitoIcon = styled.img`
@@ -144,11 +145,12 @@ const IncognitoIcon = styled.img`
 `;
 
 const AutoRemoveMessage = styled.div`
-  background-color: #f7f7f7;
+  height: 75px;
+  background-color: #ffffff;
   text-align: center;
-  line-height: 20px;
+  line-height: 70px;
   color: rgba(0, 0, 0, 0.93);
-  height:150px;
+  font-size:x-small;
 `;
 
 // const AutoRemoveMessag_line = styled.div`
