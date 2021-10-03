@@ -7,8 +7,8 @@ import {
   IconButton,
   Typography,
 } from "@material-ui/core";
-import BookmarkIcon from "@material-ui/icons/Bookmark";
-import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/MailOutline";
+import BookmarkBorderIcon from "@mui/icons-material/MailOutlineBorder";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 import StoreIcon from "@material-ui/icons/Store";
 import { Dayjs } from "dayjs";
