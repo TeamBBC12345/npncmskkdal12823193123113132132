@@ -106,6 +106,11 @@ export const TravelRecord = () => {
           })}
         </List>
       </ContentWrapper>
+
+      <AutoRemoveMessag_line>
+        
+      </AutoRemoveMessag_line>
+
       <AutoRemoveMessage>
         {t("travel_record.message.auto_remove_record", {
           day: autoRemoveRecordDay,
@@ -144,8 +149,15 @@ const IncognitoIcon = styled.img`
 `;
 
 const AutoRemoveMessage = styled.div`
-  background-color: #efefef;
+  background-color: #f7f7f7;
   text-align: center;
-  line-height: 20px;
+  line-height: 10px;
+  color: rgba(0, 0, 0, 0.93);
+`;
+
+const AutoRemoveMessag_line = styled.div`
+  background-color: #666666;
+  text-align: center;
+  line-height: 10px;
   color: rgba(0, 0, 0, 0.93);
 `;
