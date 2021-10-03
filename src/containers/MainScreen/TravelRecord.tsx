@@ -7,8 +7,8 @@ import {
   ListItemSecondaryAction,
   ListItemText,
 } from "@material-ui/core";
-import BookmarkIcon from "@mui/icons-material/MailOutline";
-import BookmarkBorderIcon from "@mui/icons-material/MailOutline";
+import BookmarkIcon from "@material-ui/icons/MailOutline";
+import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import DeleteIcon from "@material-ui/icons/Delete";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 import StoreIcon from "@material-ui/icons/Store";
