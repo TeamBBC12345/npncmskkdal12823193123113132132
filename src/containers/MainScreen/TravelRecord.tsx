@@ -106,6 +106,8 @@ export const TravelRecord = () => {
           })}
         </List>
       </ContentWrapper>
+      <AutoRemoveMessage_Line>
+      </AutoRemoveMessage_Line>
       <AutoRemoveMessage>
         {t("travel_record.message.auto_remove_record", {
           day: autoRemoveRecordDay,
@@ -154,9 +156,9 @@ const AutoRemoveMessage = styled.div`
   font-size:x-small;
 `;
 
-// const AutoRemoveMessag_line = styled.div`
-//   background-color: #666666;
-//   text-align: center;
-//   line-height: 30px;
-//   color: rgba(0, 0, 0, 0.93);
-// `;
+const AutoRemoveMessage_Line = styled.div`
+  background-color: #d9d9d9;
+  text-align: center;
+  line-height: 10px;
+  color: rgba(0, 0, 0, 0.93);
+`;
