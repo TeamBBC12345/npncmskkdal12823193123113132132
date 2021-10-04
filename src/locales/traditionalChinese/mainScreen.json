@@ -6,7 +6,7 @@
     "form": {
       "venue_name": {
         "label": "進入",
-        "placeholder": "按此進入2"
+        "placeholder": "掃描安心出行二維碼以記錄到訪"
       },
       "taxi": {
         "label": "上車",
