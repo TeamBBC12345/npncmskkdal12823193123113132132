@@ -105,16 +105,18 @@ export const Home = () => {
           <StyledCard>
             <Card1>
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  <Firstcss001>
-                    {t("home.form.venue_name.label")}
-                  </Firstcss001>
-                </Typography>
-                <StyledPlace
-                  value={t("home.form.venue_name.placeholder")}
-                  onChange={setPlace}
-                  placeholder={t("home.form.venue_name.placeholder")}
-                />
+                <Card2>
+                  <Typography color="textSecondary" gutterBottom>
+                    <Firstcss001>
+                      {t("home.form.venue_name.label")}
+                    </Firstcss001>
+                  </Typography>
+                  <StyledPlace
+                    value={t("home.form.venue_name.placeholder")}
+                    onChange={setPlace}
+                    placeholder={t("home.form.venue_name.placeholder")}
+                  />
+                </Card2>
               </CardContent>
             </Card1>
             <CardActions>
@@ -250,7 +252,7 @@ const Firstcss001 = styled.div`
     line-height: 1;
 `;
 
-const CardContent = styled.div`
+const Card2 = styled.div`
     padding-bottom: 5px;
 `;
 
