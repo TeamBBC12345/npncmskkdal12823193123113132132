@@ -103,35 +103,37 @@ export const Home = () => {
       <SliderWrapper>
         <Slider>
           <StyledCard>
-            <Card1>
-              <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  <Firstcss001>
-                    {t("home.form.venue_name.label")}
-                  </Firstcss001>
-                </Typography>
-                <StyledPlace
-                  value={t("home.form.venue_name.placeholder")}
-                  onChange={setPlace}
-                  placeholder={t("home.form.venue_name.placeholder")}
-                />
-              </CardContent>
-            </Card1>
-            <CardActions>
-              <Button
-                size="small"
-                color="primary"
-                disabled={isEmpty(trim(place))}
-                onClick={handlePlaceSubmit}
-              >
-                {t("home.button.go")}
-              </Button>
-              <Link to="/qrReader">
-                <Button size="small" color="primary">
-                  {t("home.button.scan_qr_code")}
+            <BigCard1>
+              <Card1>
+                <CardContent>
+                  <Typography color="textSecondary" gutterBottom>
+                    <Firstcss001>
+                      {t("home.form.venue_name.label")}
+                    </Firstcss001>
+                  </Typography>
+                  <StyledPlace
+                    value={t("home.form.venue_name.placeholder")}
+                    onChange={setPlace}
+                    placeholder={t("home.form.venue_name.placeholder")}
+                  />
+                </CardContent>
+              </Card1>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  disabled={isEmpty(trim(place))}
+                  onClick={handlePlaceSubmit}
+                >
+                  {t("home.button.go")}
                 </Button>
-              </Link>
-            </CardActions>
+                <Link to="/qrReader">
+                  <Button size="small" color="primary">
+                    {t("home.button.scan_qr_code")}
+                  </Button>
+                </Link>
+              </CardActions>
+            </BigCard1>
           </StyledCard>
           <StyledCard>
             <CardContent>
@@ -253,6 +255,10 @@ const Firstcss001 = styled.div`
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
+`;
+
+const BigCard1 = styled.div`
+    padding-bottom: 5px;
 `;
 
 const StyledCard = styled(Card)`
