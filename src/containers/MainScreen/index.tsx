@@ -35,8 +35,8 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     label: t("travel_record.name"),
     component: <TravelRecord />,
     icon: [{
-      "src": "icon-192x192.png",
-      "sizes": "192x192",
+      "src": "518880.png",
+      "sizes": "10x10",
       "type": "image/png"
     }],
   },
