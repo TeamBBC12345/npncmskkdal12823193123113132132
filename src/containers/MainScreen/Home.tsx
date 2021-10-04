@@ -97,7 +97,7 @@ export const Home = () => {
       <Welcome>
         <Title>
           <div>{today}</div>
-          <h1 style="margin-block-start: 0.15em; margin-block-end: 0.15em;">{t("home.record_your_visit")}</h1>
+          <h1>{t("home.record_your_visit")}</h1>
         </Title>
       </Welcome>
       <SliderWrapper>
@@ -235,6 +235,11 @@ const Welcome = styled.div`
 
 const Title = styled.div`
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+`;
+
+const h1 = styled.div`
+  margin-block-start: 0.15em;
+  margin-block-end: 0.15em;
 `;
 
 const Firstcss001 = styled.div`
