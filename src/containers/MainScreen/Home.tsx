@@ -324,3 +324,11 @@ const Msg = styled.div`
   line-height: 48px;
 `;
 
+const styles = {
+  cardcontent: {
+    padding: 0,
+    "&:last-child": {
+      paddingBottom: 0
+    }
+  }
+};
