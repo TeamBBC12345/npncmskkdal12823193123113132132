@@ -104,7 +104,7 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <Card1>
-              <CardContent paddingBottom="5">
+              <CardContent sx={{ paddingBottom: 5 }}>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
                     {t("home.form.venue_name.label")}
