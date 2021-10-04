@@ -243,13 +243,15 @@ const Firstcss001 = styled.div`
     grid: 200px / auto auto auto;
     align-items: end;
     font-size: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
 `;
 
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 68vw;
+  background-image: url("https://i.imgur.com/93pswnb.jpg");
+  background-size: 100% auto;
 `;
 
 const Slider = styled.div`
@@ -280,7 +282,6 @@ const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-  background-image: url("https://i.imgur.com/kDR3om6.jpg");
 `;
 
 const SliderWrapper = styled.div`
