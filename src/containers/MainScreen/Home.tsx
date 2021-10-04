@@ -119,7 +119,11 @@ export const Home = () => {
               </CardContent>
             </Card1>
             <CardActions>
-              <Button
+              <Link to="/qrReader">
+                <Button size="small" color="primary">
+                  {t("home.button.scan_qr_code")}
+                </Button>
+                <Button
                 size="small"
                 color="primary"
                 disabled={isEmpty(trim(place))}
@@ -127,10 +131,6 @@ export const Home = () => {
               >
                 {t("home.button.go")}
               </Button>
-              <Link to="/qrReader">
-                <Button size="small" color="primary">
-                  {t("home.button.scan_qr_code")}
-                </Button>
               </Link>
             </CardActions>
           </StyledCard>
