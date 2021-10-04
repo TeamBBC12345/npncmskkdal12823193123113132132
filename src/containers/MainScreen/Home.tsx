@@ -268,6 +268,7 @@ const Slider = styled.div`
   left: 0;
   top: -30px;
   padding: 8px 0;
+  padding-bottom: 10px;
 
   &::before {
     content: "";
