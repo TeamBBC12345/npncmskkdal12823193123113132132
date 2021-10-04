@@ -4,8 +4,8 @@ import Carousel from "@brainhubeu/react-carousel";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
-import PlaceIcon from "../../assets/518880.svg";
-// import PlaceIcon from "@material-ui/icons/Place";
+// import PlaceIcon from "../../assets/518880.svg";
+import PlaceIcon from "@material-ui/icons/AssignmentOutlined";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
 import React, { useMemo, useState } from "react";
@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <img src="https://i.imgur.com/n5oMkq6.png" alt="Girl in a jacket" width="24px" height="24px">,
+    icon: ,
   },
   {
     key: tabs.BOOKMARK,
@@ -83,10 +83,6 @@ const MainScreen = () => {
 
 export default MainScreen;
 
-const AddTravelIcon_new = styled.img`
-  width: 10px;
-  margin: 0 auto 32px auto;
-`;
 
 const PageWrapper = styled.div`
   width: 100%;
