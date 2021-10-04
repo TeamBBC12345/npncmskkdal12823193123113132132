@@ -104,9 +104,9 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <CardContent>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography_a color="textSecondary" gutterBottom>
                 {t("home.form.venue_name.label")}
-              </Typography>
+              </Typography_a>
               <StyledPlace
                 value={place}
                 onChange={setPlace}
@@ -297,7 +297,7 @@ const Msg = styled.div`
   line-height: 48px;
 `;
 
-const Typography = styled.div`
+const Typography_a = styled.div`
     display: grid;
     grid: 200px / auto auto auto;
     align-items: end;
