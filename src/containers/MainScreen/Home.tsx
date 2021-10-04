@@ -103,7 +103,7 @@ export const Home = () => {
       <SliderWrapper>
         <Slider>
           <StyledCard>
-            <Card_1>
+            <Card1>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
@@ -116,7 +116,7 @@ export const Home = () => {
                   placeholder={t("home.form.venue_name.placeholder")}
                 />
               </CardContent>
-            </Card_1>
+            </Card1>
             <CardActions>
               <Button
                 size="small"
@@ -249,7 +249,7 @@ const Firstcss001 = styled.div`
     font-weight: bold;
 `;
 
-const Card_1 = styled.div`
+const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
 `;
