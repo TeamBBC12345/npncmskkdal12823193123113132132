@@ -258,9 +258,11 @@ const Card1 = styled.div`
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 68vw;
+  padding-bottom: 5px;
 `;
 
 const Slider = styled.div`
+  padding-bottom: 5px;
   position: relative;
   display: flex;
   overflow: auto;
@@ -320,6 +322,5 @@ const Msg = styled.div`
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
   line-height: 48px;
-  padding-bottom: 5px;
 `;
 
