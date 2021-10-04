@@ -104,19 +104,17 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <Card1>
-              <CardContent>
-                <Card2>
-                  <Typography color="textSecondary" gutterBottom>
-                    <Firstcss001>
-                      {t("home.form.venue_name.label")}
-                    </Firstcss001>
-                  </Typography>
-                  <StyledPlace
-                    value={t("home.form.venue_name.placeholder")}
-                    onChange={setPlace}
-                    placeholder={t("home.form.venue_name.placeholder")}
-                  />
-                </Card2>
+              <CardContent padding-bottom="5px">
+                <Typography color="textSecondary" gutterBottom>
+                  <Firstcss001>
+                    {t("home.form.venue_name.label")}
+                  </Firstcss001>
+                </Typography>
+                <StyledPlace
+                  value={t("home.form.venue_name.placeholder")}
+                  onChange={setPlace}
+                  placeholder={t("home.form.venue_name.placeholder")}
+                />
               </CardContent>
             </Card1>
             <CardActions>
@@ -252,16 +250,11 @@ const Firstcss001 = styled.div`
     line-height: 1;
 `;
 
-const Card2 = styled.div`
-    padding-bottom: 5px;
-`;
 
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
 `;
-
-
 
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
