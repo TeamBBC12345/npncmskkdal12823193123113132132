@@ -4,7 +4,6 @@ import Carousel from "@brainhubeu/react-carousel";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
-// import PlaceIcon from "../../assets/518880.svg";
 import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
@@ -12,11 +11,12 @@ import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
-
 import { Bookmark } from "./Bookmark";
 import { Home } from "./Home";
 import { Settings } from "./Settings";
 import { TravelRecord } from "./TravelRecord";
+
+import plus from "../../assets/plus.svg";
 
 enum tabs {
   HOME = "HOME",
@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <AssignmentOutlinedIcon />,
+    icon: <AddIcon src={plus} />,
   },
   {
     key: tabs.BOOKMARK,
