@@ -288,6 +288,7 @@ const StyledPlace = styled(Place)`
   font-size: 15px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   color: white;
+  padding-bottom: 0px;
 `;
 
 const SliderWrapper = styled.div`
