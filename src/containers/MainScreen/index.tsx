@@ -10,6 +10,7 @@ import { TFunction } from "i18next";
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import TravelIconIcon from "../../assets/518880.svg";
 
 import { Bookmark } from "./Bookmark";
 import { Home } from "./Home";
@@ -34,11 +35,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: [{
-      "src": "518880.png",
-      "sizes": "10x10",
-      "type": "image/png"
-    }],
+    icon: <AddTravelIcon_new src={TravelIconIcon} />,
   },
   {
     key: tabs.BOOKMARK,
@@ -105,4 +102,9 @@ const NavWrapper = styled.div`
   padding-bottom: 8px;
   background-color: #fff;
   z-index: 1;
+`;
+
+const AddTravelIcon_new = styled.img`
+  width: 100px;
+  margin: 0 auto 32px auto;
 `;
