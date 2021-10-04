@@ -271,16 +271,16 @@ const Slider = styled.div`
 
   &::before {
     content: "";
-    flex: 0 0 3px;
+    flex: 0 0 24px;
   }
 
   &::after {
     content: "";
-    flex: 0 0 1px;
+    flex: 0 0 24px;
   }
 
   & ${StyledCard}:not(:last-child) {
-    margin-right: 2px;
+    margin-right: 13px;
   }
 `;
 
@@ -293,6 +293,7 @@ const StyledPlace = styled(Place)`
   line-height: 15px;
 `;
 
+//最後面中間白色
 const SliderWrapper = styled.div`
   background-color: #fff;
   border-radius: 32px 32px 0 0;
