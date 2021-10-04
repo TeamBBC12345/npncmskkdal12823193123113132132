@@ -4,7 +4,7 @@ import Carousel from "@brainhubeu/react-carousel";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
-import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
+// import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
 import React, { useMemo, useState } from "react";
