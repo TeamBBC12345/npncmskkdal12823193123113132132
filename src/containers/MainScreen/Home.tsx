@@ -111,7 +111,7 @@ export const Home = () => {
                   </Firstcss001>
                 </Typography>
                 <StyledPlace
-                  value={place}
+                  value={t("home.form.venue_name.placeholder")}
                   onChange={setPlace}
                   placeholder={t("home.form.venue_name.placeholder")}
                 />
@@ -287,7 +287,6 @@ const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-  color: white;
 `;
 
 const SliderWrapper = styled.div`
