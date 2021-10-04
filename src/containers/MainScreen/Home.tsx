@@ -272,7 +272,7 @@ const Slider = styled.div`
 
   &::before {
     content: "";
-    flex: 50 50 24px;
+    flex: 0 0 24px;
   }
 
   &::after {
@@ -282,6 +282,7 @@ const Slider = styled.div`
 
   & ${StyledCard}:not(:last-child) {
     margin-right: 13px;
+    padding-bottom: 5px;
   }
 `;
 
