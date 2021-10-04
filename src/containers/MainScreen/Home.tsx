@@ -253,16 +253,15 @@ const Firstcss001 = styled.div`
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
+    padding-bottom: 5px;
 `;
 
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 68vw;
-  padding-bottom: 5px;
 `;
 
 const Slider = styled.div`
-  padding-bottom: 5px;
   position: relative;
   display: flex;
   overflow: auto;
