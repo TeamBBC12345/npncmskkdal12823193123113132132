@@ -250,8 +250,11 @@ const Firstcss001 = styled.div`
     line-height: 1;
 `;
 
-const Card1 = styled.div`
+const CardContent = styled.div`
     padding-bottom: 5px;
+`;
+
+const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
 `;
