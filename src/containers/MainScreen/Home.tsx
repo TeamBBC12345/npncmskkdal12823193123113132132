@@ -249,6 +249,7 @@ const Firstcss001 = styled.div`
 
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   min-width: 68vw;
 `;
 
