@@ -162,6 +162,7 @@ const AutoRemoveMessage = styled.div`
   line-height: 70px;
   color: rgba(0, 0, 0, 0.93);
   font-size:x-small;
+  font-weight: bold;
 `;
 
 
