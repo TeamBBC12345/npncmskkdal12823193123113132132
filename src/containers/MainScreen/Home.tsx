@@ -276,7 +276,7 @@ const Slider = styled.div`
 
   &::after {
     content: "";
-    flex: 0 0 24px;
+    flex: 0 0 6px;
   }
 
   & ${StyledCard}:not(:last-child) {
@@ -294,7 +294,6 @@ const StyledPlace = styled(Place)`
 `;
 
 const SliderWrapper = styled.div`
-  padding-bottom: 5px;
   background-color: #fff;
   border-radius: 32px 32px 0 0;
   flex-shrink: 0;
@@ -309,7 +308,6 @@ const TravelRecordWrapper = styled.div`
 `;
 
 const TravelRecordInner = styled.div`
-  padding-bottom: 5px;
   padding: 0 16px;
 `;
 
