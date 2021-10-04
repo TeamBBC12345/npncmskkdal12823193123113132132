@@ -238,11 +238,6 @@ const Title = styled.div`
   line-height: 25px;
 `;
 
-const Title2 = styled.div`
-  margin-block-start: 0.15em;
-  margin-block-end: 0.15em;
-`;
-
 const Firstcss001 = styled.div`
     display: grid;
     grid: 200px / auto auto auto;
