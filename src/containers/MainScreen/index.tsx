@@ -16,7 +16,7 @@ import { Home } from "./Home";
 import { Settings } from "./Settings";
 import { TravelRecord } from "./TravelRecord";
 
-import plus from "../../assets/plus.svg";
+import incognitoIcon from "../../assets/incognito.svg";
 
 enum tabs {
   HOME = "HOME",
@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <plus src={plus} />,
+    icon: <IncognitoIcon src={incognitoIcon} />,
   },
   {
     key: tabs.BOOKMARK,
