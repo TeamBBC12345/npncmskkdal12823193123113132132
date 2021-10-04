@@ -312,7 +312,6 @@ const TravelRecordInner = styled.div`
 `;
 
 const Item = styled(Card)`
-  padding-bottom: 5px;
   margin-bottom: 16px;
 `;
 
@@ -321,5 +320,6 @@ const Msg = styled.div`
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
   line-height: 48px;
+  padding-bottom: 5px;
 `;
 
