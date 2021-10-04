@@ -260,8 +260,6 @@ const Slider = styled.div`
   left: 0;
   top: -30px;
   padding: 8px 0;
-  background-image: url("https://i.imgur.com/93pswnb.jpg");
-  background-size: 100% 100%;
 
   &::before {
     content: "";
@@ -282,6 +280,8 @@ const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
+  background-image: url("https://i.imgur.com/93pswnb.jpg");
+  background-size: 100% 100%;
 `;
 
 const SliderWrapper = styled.div`
