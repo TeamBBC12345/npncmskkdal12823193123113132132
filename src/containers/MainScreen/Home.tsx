@@ -253,7 +253,6 @@ const Firstcss001 = styled.div`
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
-    padding-bottom: 5px;
 `;
 
 const StyledCard = styled(Card)`
@@ -272,16 +271,16 @@ const Slider = styled.div`
 
   &::before {
     content: "";
-    flex: 0 0 24px;
+    flex: 0 0 3px;
   }
 
   &::after {
     content: "";
-    flex: 0 0 24px;
+    flex: 0 0 1px;
   }
 
   & ${StyledCard}:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 2px;
   }
 `;
 
