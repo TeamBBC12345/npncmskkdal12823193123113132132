@@ -244,6 +244,7 @@ const Firstcss001 = styled.div`
     align-items: end;
     font-size: 30px;
     color: black;
+    font-weight: bold;
 `;
 
 const StyledCard = styled(Card)`
@@ -277,6 +278,7 @@ const Slider = styled.div`
 
 const StyledPlace = styled(Place)`
   text-align: left;
+  font-size: 10px;
 `;
 
 const SliderWrapper = styled.div`
