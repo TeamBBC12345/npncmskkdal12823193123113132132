@@ -119,21 +119,12 @@ export const Home = () => {
               </CardContent>
             </Card1>
             <CardActions>
-              <Link1>
-                <Link to="/qrReader">
-                  <Button size="large" color="primary">
-                    {t("home.button.scan_qr_code")}
-                  </Button>
-                </Link>
-              </Link1>
-              <Button
-                size="small"
-                color="primary"
-                disabled={isEmpty(trim(place))}
-                onClick={handlePlaceSubmit}
-              >
-                {t("home.button.go")}
-              </Button>
+              <Link to="/qrReader">
+                <Button size="large" color="primary">
+                  {t("home.button.scan_qr_code")}
+                </Button>
+              </Link>
+              <img class="arrow1" src="../../assets/icon_arrow_right.png">
             </CardActions>
           </StyledCard>
           <StyledCard>
@@ -257,10 +248,6 @@ const Firstcss001 = styled.div`
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
-`;
-
-const Link1 = styled.div`
-    font-size: 20px;
 `;
 
 const StyledCard = styled(Card)`
