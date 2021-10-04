@@ -2,11 +2,12 @@ import {
   Button,
   Card,
   CardActions,
-  CardContent,
   CardHeader,
   IconButton,
   Typography,
 } from "@material-ui/core";
+
+import { CardContent } from "../../components/CardContent.js";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
@@ -104,7 +105,7 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <Card1>
-              <CardContent style={{ paddingbottom: 5 }}>
+              <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
                     {t("home.form.venue_name.label")}
