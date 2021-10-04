@@ -103,18 +103,20 @@ export const Home = () => {
       <SliderWrapper>
         <Slider>
           <StyledCard>
-            <CardContent>
-              <Typography color="textSecondary" gutterBottom>
-                <Firstcss001>
-                  {t("home.form.venue_name.label")}
-                </Firstcss001>
-              </Typography>
-              <StyledPlace
-                value={place}
-                onChange={setPlace}
-                placeholder={t("home.form.venue_name.placeholder")}
-              />
-            </CardContent>
+            <Card_1>
+              <CardContent>
+                <Typography color="textSecondary" gutterBottom>
+                  <Firstcss001>
+                    {t("home.form.venue_name.label")}
+                  </Firstcss001>
+                </Typography>
+                <StyledPlace
+                  value={place}
+                  onChange={setPlace}
+                  placeholder={t("home.form.venue_name.placeholder")}
+                />
+              </CardContent>
+            </Card_1>
             <CardActions>
               <Button
                 size="small"
@@ -247,6 +249,11 @@ const Firstcss001 = styled.div`
     font-weight: bold;
 `;
 
+const Card_1 = styled.div`
+    background-image: url("https://i.imgur.com/93pswnb.jpg");
+    background-size: 100% 100%;
+`;
+
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 68vw;
@@ -280,8 +287,6 @@ const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
-  background-image: url("https://i.imgur.com/93pswnb.jpg");
-  background-size: 100% 100%;
 `;
 
 const SliderWrapper = styled.div`
