@@ -244,7 +244,7 @@ const Firstcss001 = styled.div`
     display: grid;
     grid: 200px / auto auto auto;
     align-items: end;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     font-weight: bold;
 `;
@@ -285,7 +285,7 @@ const Slider = styled.div`
 
 const StyledPlace = styled(Place)`
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   color: white;
 `;
