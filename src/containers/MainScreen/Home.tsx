@@ -296,3 +296,11 @@ const Msg = styled.div`
   font-size: 0.875rem;
   line-height: 48px;
 `;
+
+const Typography = styled.div`
+    display: grid;
+    grid: 200px / auto auto auto;
+    align-items: end;
+    font-size: 30px;
+    color: black;
+`;
