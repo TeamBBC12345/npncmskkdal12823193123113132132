@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <AddTravelIcon_new src={TravelIconIcon} />,
+    icon: <TravelIconIcon />,
   },
   {
     key: tabs.BOOKMARK,
