@@ -4,7 +4,7 @@ import Carousel from "@brainhubeu/react-carousel";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
-import TravelIconIcon from "../../assets/518880.svg";
+import PlaceIcon from "../../assets/518880.svg";
 // import PlaceIcon from "@material-ui/icons/Place";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <TravelIconIcon />,
+    icon: <PlaceIcon />,
   },
   {
     key: tabs.BOOKMARK,
