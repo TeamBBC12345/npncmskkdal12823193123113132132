@@ -249,7 +249,6 @@ const Firstcss001 = styled.div`
 
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
   min-width: 68vw;
 `;
 
@@ -280,6 +279,7 @@ const Slider = styled.div`
 const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
 `;
 
 const SliderWrapper = styled.div`
