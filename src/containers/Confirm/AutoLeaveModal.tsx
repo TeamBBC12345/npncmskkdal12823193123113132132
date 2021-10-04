@@ -52,7 +52,7 @@ export const AutoLeaveModal = ({
         content: {
           outline: "none",
           border: "0",
-          padding: "90px",
+          padding: "16px",
           borderRadius: "8px",
           width: "240px",
           position: "absolute",
