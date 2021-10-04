@@ -280,6 +280,7 @@ const StyledPlace = styled(Place)`
   text-align: left;
   font-size: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0);
+  background-image: url("https://i.imgur.com/kDR3om6.jpg");
 `;
 
 const SliderWrapper = styled.div`
