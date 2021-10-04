@@ -257,7 +257,7 @@ const Slider = styled.div`
   overflow: auto;
   width: 100%;
   left: 0;
-  top: -24px;
+  top: -30px;
   padding: 8px 0;
 
   &::before {
@@ -271,7 +271,7 @@ const Slider = styled.div`
   }
 
   & ${StyledCard}:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 13px;
   }
 `;
 
