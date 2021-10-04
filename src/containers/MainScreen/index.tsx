@@ -5,7 +5,7 @@ import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
 // import PlaceIcon from "../../assets/518880.svg";
-import PlaceIcon from "@material-ui/icons/AssignmentOutlined";
+import AssignmentOutlinedIcon from "@material-ui/icons/AssignmentOutlined";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
 import React, { useMemo, useState } from "react";
@@ -36,7 +36,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <PlaceIcon />,
+    icon: <AssignmentOutlinedIcon />,
   },
   {
     key: tabs.BOOKMARK,
