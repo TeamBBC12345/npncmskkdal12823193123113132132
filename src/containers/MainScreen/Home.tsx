@@ -294,6 +294,7 @@ const StyledPlace = styled(Place)`
 `;
 
 const SliderWrapper = styled.div`
+  padding-bottom: 5px;
   background-color: #fff;
   border-radius: 32px 32px 0 0;
   flex-shrink: 0;
@@ -308,12 +309,12 @@ const TravelRecordWrapper = styled.div`
 `;
 
 const TravelRecordInner = styled.div`
+  padding-bottom: 5px;
   padding: 0 16px;
 `;
 
 const Item = styled(Card)`
-  margin-bottom: 1px;
-  // margin-bottom: 16px;
+  margin-bottom: 16px;
 `;
 
 const Msg = styled.div`
