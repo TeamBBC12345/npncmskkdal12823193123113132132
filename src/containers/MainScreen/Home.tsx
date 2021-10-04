@@ -268,7 +268,6 @@ const Slider = styled.div`
   left: 0;
   top: -30px;
   padding: 8px 0;
-  padding-bottom: 10px;
 
   &::before {
     content: "";
@@ -313,7 +312,8 @@ const TravelRecordInner = styled.div`
 `;
 
 const Item = styled(Card)`
-  margin-bottom: 16px;
+  margin-bottom: 1px;
+  // margin-bottom: 16px;
 `;
 
 const Msg = styled.div`
