@@ -119,11 +119,14 @@ export const Home = () => {
               </CardContent>
             </Card1>
             <CardActions>
-              <Link to="/qrReader">
-                <Button size="small" color="primary">
-                  {t("home.button.scan_qr_code")}
-                </Button>
-                <Button
+              <Link1>
+                <Link to="/qrReader">
+                  <Button size="small" color="primary">
+                    {t("home.button.scan_qr_code")}
+                  </Button>
+                </Link>
+              </Link1>
+              <Button
                 size="small"
                 color="primary"
                 disabled={isEmpty(trim(place))}
@@ -131,7 +134,6 @@ export const Home = () => {
               >
                 {t("home.button.go")}
               </Button>
-              </Link>
             </CardActions>
           </StyledCard>
           <StyledCard>
@@ -255,6 +257,10 @@ const Firstcss001 = styled.div`
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
     background-size: 100% 100%;
+`;
+
+const Link1 = styled.div`
+    font-size: 15px;
 `;
 
 const StyledCard = styled(Card)`
