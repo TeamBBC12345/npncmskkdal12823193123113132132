@@ -104,7 +104,7 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <Card1>
-              <CardContent padding-bottom="5px">
+              <CardContent paddingBottom="5">
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
                     {t("home.form.venue_name.label")}
@@ -324,11 +324,4 @@ const Msg = styled.div`
   line-height: 48px;
 `;
 
-const styles = {
-  cardcontent: {
-    padding: 0,
-    "&:last-child": {
-      paddingBottom: 0
-    }
-  }
-};
+
