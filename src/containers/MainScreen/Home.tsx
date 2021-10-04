@@ -121,7 +121,7 @@ export const Home = () => {
             <CardActions>
               <Link1>
                 <Link to="/qrReader">
-                  <Button size="small" color="primary">
+                  <Button size="large" color="primary">
                     {t("home.button.scan_qr_code")}
                   </Button>
                 </Link>
@@ -260,7 +260,7 @@ const Card1 = styled.div`
 `;
 
 const Link1 = styled.div`
-    font-size: 15px;
+    font-size: 20px;
 `;
 
 const StyledCard = styled(Card)`
