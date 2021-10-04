@@ -105,9 +105,9 @@ export const Home = () => {
           <StyledCard>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
-                <div id="first_css">
+                <Firstcss001>
                   {t("home.form.venue_name.label")}
-                </div>
+                </Firstcss001>
               </Typography>
               <StyledPlace
                 value={place}
@@ -237,6 +237,14 @@ const Title = styled.div`
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
 `;
 
+const Firstcss001 = styled.div`
+    display: grid;
+    grid: 200px / auto auto auto;
+    align-items: end;
+    font-size: 30px;
+    color: black;
+`;
+
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 80vw;
@@ -299,10 +307,3 @@ const Msg = styled.div`
   line-height: 48px;
 `;
 
-const first_css = styled.div`
-    display: grid;
-    grid: 200px / auto auto auto;
-    align-items: end;
-    font-size: 30px;
-    color: black;
-`;
