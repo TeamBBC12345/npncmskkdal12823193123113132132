@@ -5,17 +5,17 @@
     "you_have_entered": "你已進入",
     "form": {
       "venue_name": {
-        "label": "我想去",
-        "placeholder": "輸入地址"
+        "label": "進入",
+        "placeholder": "按此進入2"
       },
       "taxi": {
-        "label": "我搭緊",
-        "placeholder": "輸入車牌"
+        "label": "上車",
+        "placeholder": "按此上車2"
       }
     },
     "button": {
       "go": "話去就去!",
-      "scan_qr_code": "掃瞄二維碼",
+      "scan_qr_code": "按此進入",
       "ride": "話搭就搭!"
     }
   },
