@@ -4,13 +4,14 @@ import Carousel from "@brainhubeu/react-carousel";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import HomeIcon from "@material-ui/icons/Home";
+import TravelIconIcon from "../../assets/518880.svg";
 // import PlaceIcon from "@material-ui/icons/Place";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { TFunction } from "i18next";
 import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import TravelIconIcon from "../../assets/518880.svg";
+
 
 import { Bookmark } from "./Bookmark";
 import { Home } from "./Home";
@@ -82,6 +83,11 @@ const MainScreen = () => {
 
 export default MainScreen;
 
+const AddTravelIcon_new = styled.img`
+  width: 10px;
+  margin: 0 auto 32px auto;
+`;
+
 const PageWrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -104,7 +110,4 @@ const NavWrapper = styled.div`
   z-index: 1;
 `;
 
-const AddTravelIcon_new = styled.img`
-  width: 10px;
-  margin: 0 auto 32px auto;
-`;
+
