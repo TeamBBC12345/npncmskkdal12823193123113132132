@@ -105,6 +105,6 @@ const NavWrapper = styled.div`
 `;
 
 const AddTravelIcon_new = styled.img`
-  width: 100px;
+  width: 10px;
   margin: 0 auto 32px auto;
 `;
