@@ -250,8 +250,6 @@ const Firstcss001 = styled.div`
 const StyledCard = styled(Card)`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   min-width: 68vw;
-  background-image: url("https://i.imgur.com/93pswnb.jpg");
-  background-size: 100% auto;
 `;
 
 const Slider = styled.div`
@@ -262,6 +260,8 @@ const Slider = styled.div`
   left: 0;
   top: -30px;
   padding: 8px 0;
+  background-image: url("https://i.imgur.com/93pswnb.jpg");
+  background-size: 100% 100%;
 
   &::before {
     content: "";
