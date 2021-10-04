@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@material-ui/core";
 
-import { CardContent } from "../../components/CardContent.js";
+import { CardContent } from "../../components/CardContent";
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
