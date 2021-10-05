@@ -166,6 +166,18 @@ export const Home = () => {
                 </Button>
               </Link>
             </CardActions>
+            <Link to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    padding: "1px 1px 1px 15px",
+                    fontSize: "18px",
+                    color: "#12B188",
+                  }}
+                variant="text"
+                >
+                  <ArrowForwardIosIcon />
+                </Button>
+            </Link>
           </StyledCard>
           <StyledCard>
             <CardContent>
