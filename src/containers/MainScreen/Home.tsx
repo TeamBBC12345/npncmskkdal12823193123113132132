@@ -136,11 +136,19 @@ export const Home = () => {
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
-              <Button
+{/*              <Button
                 size="small"
-                color="#ffffff"
+                color="primary"
                 disabled={isEmpty(trim(place))}
                 onClick={handlePlaceSubmit}
+              >*/}
+              <Button
+                size="small"
+                disabled={isEmpty(trim(place))}
+                onClick={handlePlaceSubmit}
+                style={{
+                    color: "#ffffff",
+                }}
               >
                 {t("home.button.go")}
               </Button>
