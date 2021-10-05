@@ -126,11 +126,11 @@ export const Home = () => {
                   padding: "3px 0px 3px 0px",
                 }}>
               <Link to="/qrReader">
-                <Button nowrap color="primary" style={{
+                <Button color="primary" style={{
                     backgroundColor: "white",
                     padding: "1px 1px 1px 15px",
                     fontSize: "18px",
-                    // color: "#12B188",
+                    whiteSpace: "nowrap",
                   }}
                 variant="text"
                 >
