@@ -104,10 +104,7 @@ export const Home = () => {
         <Slider>
           <StyledCard>
             <Card1>
-              <CardContent style={{
-                  padding: "3px 0px 3px 0px",
-                }}
-                >
+              <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
                     {t("home.form.venue_name.label")}
@@ -120,7 +117,9 @@ export const Home = () => {
                 />
               </CardContent>
             </Card1>
-            <CardActions>
+            <CardActions style={{
+                  padding: "3px 0px 3px 0px",
+                }}>
               <Link to="/qrReader">
                 <Button color="primary" style={{
                     backgroundColor: "white",
