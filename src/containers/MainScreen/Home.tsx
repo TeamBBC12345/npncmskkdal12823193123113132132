@@ -7,7 +7,6 @@ import {
   IconButton,
   Typography,
 } from "@material-ui/core";
-
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
@@ -51,13 +50,13 @@ export const Home = () => {
     return currentTime.format("YYYY-MM-DD, dddd");
   }, [currentTime]);
 
-  const handlePlaceSubmit = () => {
-    enterLocation({
-      nameZh: place,
-      type: locationType.PLACE,
-      inputType: travelRecordInputType.MANUALLY,
-    });
-  };
+  // const handlePlaceSubmit = () => {
+  //   enterLocation({
+  //     nameZh: place,
+  //     type: locationType.PLACE,
+  //     inputType: travelRecordInputType.MANUALLY,
+  //   });
+  // };
 
   const handleTaxiSubmit = () => {
     enterLocation({
