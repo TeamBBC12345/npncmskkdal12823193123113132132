@@ -183,7 +183,7 @@ export const Home = () => {
                 </Typography>
                 <StyledPlace
                   value={t("home.form.taxi.placeholder")}
-                  onChange={setPlace}
+                  onChange={setLicense}
                   placeholder={t("home.form.taxi.placeholder")}
                 />
               </CardContent>
