@@ -120,11 +120,9 @@ export const Home = () => {
             </Card1>
             <CardActions>
               <Link to="/qrReader">
-                <ButtonTextStyle1>
                   <Button size="large" color="primary">
                     {t("home.button.scan_qr_code")}
                   </Button>
-                </ButtonTextStyle1>
               </Link>
             </CardActions>
           </StyledCard>
@@ -245,9 +243,9 @@ const Firstcss001 = styled.div`
     line-height: 1;
 `;
 
-const ButtonTextStyle1 = styled.div`
-    font-size: 18px;
-`;
+// const ButtonTextStyle1 = styled.div`
+//     font-size: 18px;
+// `;
 
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/93pswnb.jpg");
