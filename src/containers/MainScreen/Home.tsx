@@ -32,7 +32,7 @@ import { getVenueName } from "../../utils/qr";
 
 export const Home = () => {
   const { t } = useTranslation("main_screen");
-  const [place, setPlace] = useState("");
+  // const [place, setPlace] = useState("");
   const [license, setLicense] = useState("");
   const [leaveModalOpen, setLeaveModalOpen] = useState(false);
   const [leaveId, setLeaveId] = useState<null | string>(null);
