@@ -152,18 +152,18 @@ export const Home = () => {
               >
                 {t("home.button.go")}
               </Button>
-{/*              <Button
-                      style={{
-                          backgroundColor: "white",
-                          padding: "auto auto 20 auto",
-                          fontSize: "18px",
-                          color: "primary",
-                          height: "100px",
-                      }}
-                  variant="contained"
-                  >
-                  Submit
-              </Button>*/}
+              <Link to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    padding: "1px 1px 1px 15px",
+                    fontSize: "18px",
+                    color: "#12B188",
+                  }}
+                variant="text"
+                >
+                  TEST
+                </Button>
+              </Link>
             </CardActions>
           </StyledCard>
           <StyledCard>
