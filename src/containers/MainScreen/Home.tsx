@@ -107,7 +107,7 @@ export const Home = () => {
             }}>
             <Card1>
               <CardContent style={{
-                  padding: "12px 12px 12px 12px",
+                  padding: "16px 16px 12px 16px",
                 }}>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
