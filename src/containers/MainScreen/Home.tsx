@@ -305,7 +305,7 @@ export const Home = () => {
          <StyledCard style={{
               borderRadius: "3.5%",
             }}>
-            <Card3>
+            <Card5>
               <CardContent style={{
                   padding: "16px 16px 12px 16px",
                 }}>
@@ -320,7 +320,7 @@ export const Home = () => {
                   placeholder={t("home.form.vaccine.placeholder")}
                 />
               </CardContent>
-            </Card3>
+            </Card5>
             <CardActions style={{
                   padding: "3px 0px 3px 0px",
                 }}>
@@ -485,6 +485,11 @@ const Card2 = styled.div`
 
 const Card3 = styled.div`
     background-image: url("https://i.imgur.com/eXYnI5i.jpg");
+    background-size: 100% 100%;
+`;
+
+const Card5 = styled.div`
+    background-image: url("https://i.imgur.com/0nCIVlV.png");
     background-size: 100% 100%;
 `;
 
