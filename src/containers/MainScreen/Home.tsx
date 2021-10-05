@@ -169,27 +169,25 @@ export const Home = () => {
 
           {/*-------------------------------------------*/}
 
-                    <StyledCard style={{
+          <StyledCard style={{
               borderRadius: "3.5%",
             }}>
-            <Link to="/qrReader">
-              <Card2>
-                <CardContent style={{
-                    padding: "16px 16px 12px 16px",
-                  }}>
-                  <Typography color="textSecondary" gutterBottom>
-                    <Firstcss001>
-                      {t("home.form.taxi.label")}
-                    </Firstcss001>
-                  </Typography>
-                  <StyledPlace
-                    value={t("home.form.taxi.placeholder")}
-                    onChange={setPlace}
-                    placeholder={t("home.form.taxi.placeholder")}
-                  />
-                </CardContent>
-              </Card2>
-            </Link>
+            <Card2>
+              <CardContent style={{
+                  padding: "16px 16px 12px 16px",
+                }}>
+                <Typography color="textSecondary" gutterBottom>
+                  <Firstcss001>
+                    {t("home.form.taxi.label")}
+                  </Firstcss001>
+                </Typography>
+                <StyledPlace
+                  value={t("home.form.taxi.placeholder")}
+                  onChange={setPlace}
+                  placeholder={t("home.form.taxi.placeholder")}
+                />
+              </CardContent>
+            </Card2>
             <CardActions style={{
                   padding: "3px 0px 3px 0px",
                 }}>
@@ -236,26 +234,63 @@ export const Home = () => {
 
           {/*-------------------------------------------*/}
 
-          <StyledCard>
-            <CardContent>
-              <Typography color="textSecondary" gutterBottom>
-                {t("home.form.taxi.label")}
-              </Typography>
-              <StyledPlace
-                value={license}
-                onChange={setLicense}
-                placeholder={t("home.form.taxi.placeholder")}
-              />
-            </CardContent>
-            <CardActions>
+          <StyledCard style={{
+              borderRadius: "3.5%",
+            }}>
+            <Card3>
+              <CardContent style={{
+                  padding: "16px 16px 12px 16px",
+                }}>
+                <Typography color="textSecondary" gutterBottom>
+                  <Firstcss001>
+                    {t("home.form.report.label")}
+                  </Firstcss001>
+                </Typography>
+                <StyledPlace
+                  value={t("home.form.report.placeholder")}
+                  onChange={setPlace}
+                  placeholder={t("home.form.report.placeholder")}
+                />
+              </CardContent>
+            </Card3>
+            <CardActions style={{
+                  padding: "3px 0px 3px 0px",
+                }}>
+              <Link to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    padding: "1px 1px 1px 15px",
+                    fontSize: "18px",
+                    whiteSpace: "nowrap",
+                  }}
+                variant="text"
+                >
+                  {t("home.button.report")}
+                </Button>
+              </Link>
               <Button
                 size="small"
-                color="primary"
-                disabled={isEmpty(trim(license))}
-                onClick={handleTaxiSubmit}
+                disabled={isEmpty(trim(place))}
+                onClick={handlePlaceSubmit}
+                style={{
+                    color: "#ffffff",
+                }}
               >
-                {t("home.button.ride")}
+                {t("home.button.report")}
               </Button>
+              <Link style={{
+                    padding: "0px 0px 0px 38px",
+                  }} to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    fontSize: "18px",
+                    color: "#12B188",
+                  }}
+                variant="text"
+                >
+                  <ArrowForwardIosIcon />
+                </Button>
+              </Link>
             </CardActions>
           </StyledCard>
 
@@ -367,6 +402,11 @@ const Card1 = styled.div`
 
 const Card2 = styled.div`
     background-image: url("https://i.imgur.com/ROlLyfJ.jpg");
+    background-size: 100% 100%;
+`;
+
+const Card3 = styled.div`
+    background-image: url("https://i.imgur.com/eXYnI5i.jpg");
     background-size: 100% 100%;
 `;
 

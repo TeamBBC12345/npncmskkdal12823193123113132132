@@ -11,12 +11,17 @@
       "taxi": {
         "label": "上車",
         "placeholder": "乘搭的士時請掃描車廂內的車牌"
+      },
+      "report": {
+        "label": "報告確診或初步確診",
+        "placeholder": "用戶如被確診或初步確診，須上載其出行紀錄給衛生防護中心，協助個案調查發提供感染風險通知給其他相關用戶"
       }
     },
     "button": {
       "go": "話去就去!",
       "scan_qr_code": "按此進入",
-      "ride": "按此上車"
+      "ride": "按此上車",
+      "report": "按此報告"
     }
   },
   "travel_record": {
