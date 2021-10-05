@@ -102,7 +102,9 @@ export const Home = () => {
       </Welcome>
       <SliderWrapper>
         <Slider>
-          <StyledCard>
+          <StyledCard style={{
+              borderRadius: "3.5%",
+            }}>
             <Card1>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
