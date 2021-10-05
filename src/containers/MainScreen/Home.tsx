@@ -119,11 +119,11 @@ export const Home = () => {
             </Card1>
             <CardActions>
               <Link to="/qrReader">
-                <Button style={{
+                <Button color="primary" style={{
                     backgroundColor: "white",
                     padding: "1px 1px 1px 10px",
                     fontSize: "18px",
-                    color: "#12B188",
+                    // color: "#12B188",
                   }}
                 variant="text"
                 >
