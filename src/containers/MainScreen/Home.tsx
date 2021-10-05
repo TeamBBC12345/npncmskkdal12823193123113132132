@@ -301,6 +301,69 @@ export const Home = () => {
 
 
 
+
+         <StyledCard style={{
+              borderRadius: "3.5%",
+            }}>
+            <Card3>
+              <CardContent style={{
+                  padding: "16px 16px 12px 16px",
+                }}>
+                <Typography color="textSecondary" gutterBottom>
+                  <Firstcss003>
+                    {t("home.form.vaccine.label")}
+                  </Firstcss003>
+                </Typography>
+                <StyledPlace
+                  value={t("home.form.vaccine.placeholder")}
+                  onChange={setPlace}
+                  placeholder={t("home.form.vaccine.placeholder")}
+                />
+              </CardContent>
+            </Card3>
+            <CardActions style={{
+                  padding: "3px 0px 3px 0px",
+                }}>
+              <Link to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    padding: "1px 1px 1px 15px",
+                    fontSize: "18px",
+                    whiteSpace: "nowrap",
+                  }}
+                variant="text"
+                >
+                  {t("home.button.scan_qr_code")}
+                </Button>
+              </Link>
+              <Button
+                size="small"
+                disabled={isEmpty(trim(place))}
+                onClick={handlePlaceSubmit}
+                style={{
+                    color: "#ffffff",
+                }}
+              >
+                {t("home.button.scan_qr_code")}
+              </Button>
+              <Link style={{
+                    padding: "0px 0px 0px 38px",
+                  }} to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    fontSize: "18px",
+                    color: "#12B188",
+                  }}
+                variant="text"
+                >
+                  <ArrowForwardIosIcon />
+                </Button>
+              </Link>
+            </CardActions>
+          </StyledCard>
+
+
+
         </Slider>
       </SliderWrapper>
       <TravelRecordWrapper>

@@ -15,6 +15,10 @@
       "report": {
         "label": "報告確診或初步確診",
         "placeholder": "用戶如被確診或初步確診..."
+      },
+      "vaccine": {
+        "label": "電子疫苗接種及檢測紀錄",
+        "placeholder": "查看電子疫苗接種及檢測紀錄"
       }
     },
     "button": {
