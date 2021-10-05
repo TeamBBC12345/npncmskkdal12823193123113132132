@@ -124,7 +124,7 @@ export const Home = () => {
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
-              <img class="arrow1" src="../../assets/icon_arrow_right.png">
+                <img class="arrow1" src="../../assets/icon_arrow_right.png">
             </CardActions>
           </StyledCard>
           <StyledCard>
