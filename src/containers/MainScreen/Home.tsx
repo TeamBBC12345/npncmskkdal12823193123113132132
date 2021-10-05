@@ -119,7 +119,13 @@ export const Home = () => {
             </Card1>
             <CardActions>
               <Link to="/qrReader">
-                <Button size="large" color="primary">
+                <Button style={{
+                    padding: "1px 1px 1px 1px",
+                    fontSize: "18px",
+                    color: "primary",
+                  }}
+                variant="contained"
+                >
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
@@ -131,18 +137,18 @@ export const Home = () => {
               >
                 {t("home.button.go")}
               </Button>
-              <Button
+{/*              <Button
                       style={{
                           backgroundColor: "white",
                           padding: "auto auto 20 auto",
                           fontSize: "18px",
-                          color: "black",
+                          color: "primary",
                           height: "100px",
                       }}
                   variant="contained"
                   >
                   Submit
-              </Button>
+              </Button>*/}
             </CardActions>
           </StyledCard>
           <StyledCard>
