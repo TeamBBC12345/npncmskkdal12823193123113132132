@@ -119,7 +119,7 @@ export const Home = () => {
             </Card1>
             <CardActions>
               <Link to="/qrReader">
-                <Button fontSize: "18px", size="large", color="primary">
+                <Button fontSize="18px" size="large" color="primary">
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
