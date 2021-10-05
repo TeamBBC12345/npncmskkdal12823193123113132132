@@ -125,7 +125,7 @@ export const Home = () => {
               <Link to="/qrReader">
                 <Button color="primary" style={{
                     backgroundColor: "white",
-                    padding: "1px 1px 1px 10px",
+                    padding: "1px 1px 1px 15px",
                     fontSize: "18px",
                     // color: "#12B188",
                   }}
