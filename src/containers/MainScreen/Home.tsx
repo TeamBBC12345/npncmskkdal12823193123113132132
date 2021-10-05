@@ -125,8 +125,8 @@ export const Home = () => {
             <CardActions style={{
                   padding: "3px 0px 3px 0px",
                 }}>
-              <Link nowrap to="/qrReader">
-                <Button color="primary" style={{
+              <Link to="/qrReader">
+                <Button wrap="nowrap" color="primary" style={{
                     backgroundColor: "white",
                     padding: "1px 1px 1px 15px",
                     fontSize: "18px",
