@@ -106,7 +106,9 @@ export const Home = () => {
               borderRadius: "3.5%",
             }}>
             <Card1>
-              <CardContent>
+              <CardContent style={{
+                  padding: "12px 12px 12px 12px",
+                }}>
                 <Typography color="textSecondary" gutterBottom>
                   <Firstcss001>
                     {t("home.form.venue_name.label")}
