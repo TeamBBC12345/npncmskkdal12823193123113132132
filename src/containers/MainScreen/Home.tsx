@@ -153,10 +153,11 @@ export const Home = () => {
               >
                 {t("home.button.go")}
               </Button>
-              <Link to="/qrReader">
+              <Link style={{
+                    padding: "0px 0px 0px 38px",
+                  }} to="/qrReader">
                 <Button color="primary" style={{
                     backgroundColor: "white",
-                    padding: "1px 1px 1px 30px",
                     fontSize: "18px",
                     color: "#12B188",
                   }}
