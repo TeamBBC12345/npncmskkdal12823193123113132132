@@ -133,8 +133,6 @@ export const Home = () => {
               </Button>
               <Button
                       style={{
-                          // borderRadius: 35,
-                          size: "large",
                           backgroundColor: "white",
                           padding: "auto auto 20 auto",
                           fontSize: "18px",
