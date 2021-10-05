@@ -201,6 +201,7 @@ export const Home = () => {
                     padding: "1px 1px 1px 15px",
                     fontSize: "18px",
                     whiteSpace: "nowrap",
+                    color: "#009688",
                   }}
                 variant="text"
                 >
@@ -246,9 +247,9 @@ export const Home = () => {
                   padding: "16px 16px 12px 16px",
                 }}>
                 <Typography color="textSecondary" gutterBottom>
-                  <Firstcss001>
+                  <Firstcss003>
                     {t("home.form.report.label")}
-                  </Firstcss001>
+                  </Firstcss003>
                 </Typography>
                 <StyledPlace
                   value={t("home.form.report.placeholder")}
@@ -390,6 +391,16 @@ const Firstcss001 = styled.div`
     grid: 200px / auto auto auto;
     align-items: end;
     font-size: 28px;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+`;
+
+const Firstcss003 = styled.div`
+    display: grid;
+    grid: 200px / auto auto auto;
+    align-items: end;
+    font-size: 20px;
     color: white;
     font-weight: bold;
     line-height: 1;
