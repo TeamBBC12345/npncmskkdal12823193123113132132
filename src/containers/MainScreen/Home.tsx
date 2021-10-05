@@ -125,7 +125,7 @@ export const Home = () => {
               </Link>
               <Button
                 size="small"
-                color="white"
+                color="primary"
                 disabled={isEmpty(trim(place))}
                 onClick={handlePlaceSubmit}
               >
