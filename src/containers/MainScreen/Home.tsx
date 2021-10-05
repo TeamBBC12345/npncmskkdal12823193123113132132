@@ -11,6 +11,7 @@ import BookmarkIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 import StoreIcon from "@material-ui/icons/Store";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Dayjs } from "dayjs";
 import { isEmpty, trim } from "ramda";
 import React, { useEffect, useMemo, useState } from "react";
@@ -161,7 +162,7 @@ export const Home = () => {
                   }}
                 variant="text"
                 >
-                  TEST
+                  <ArrowForwardIosIcon />
                 </Button>
               </Link>
             </CardActions>
