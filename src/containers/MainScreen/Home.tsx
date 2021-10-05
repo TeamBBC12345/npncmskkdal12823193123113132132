@@ -106,22 +106,24 @@ export const Home = () => {
           <StyledCard style={{
               borderRadius: "3.5%",
             }}>
-            <Card1>
-              <CardContent style={{
-                  padding: "16px 16px 12px 16px",
-                }}>
-                <Typography color="textSecondary" gutterBottom>
-                  <Firstcss001>
-                    {t("home.form.venue_name.label")}
-                  </Firstcss001>
-                </Typography>
-                <StyledPlace
-                  value={t("home.form.venue_name.placeholder")}
-                  onChange={setPlace}
-                  placeholder={t("home.form.venue_name.placeholder")}
-                />
-              </CardContent>
-            </Card1>
+            <Link to="/qrReader">
+              <Card1>
+                <CardContent style={{
+                    padding: "16px 16px 12px 16px",
+                  }}>
+                  <Typography color="textSecondary" gutterBottom>
+                    <Firstcss001>
+                      {t("home.form.venue_name.label")}
+                    </Firstcss001>
+                  </Typography>
+                  <StyledPlace
+                    value={t("home.form.venue_name.placeholder")}
+                    onChange={setPlace}
+                    placeholder={t("home.form.venue_name.placeholder")}
+                  />
+                </CardContent>
+              </Card1>
+            </Link>
             <CardActions style={{
                   padding: "3px 0px 3px 0px",
                 }}>
