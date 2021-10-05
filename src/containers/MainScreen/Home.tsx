@@ -123,9 +123,9 @@ export const Home = () => {
                     backgroundColor: "white",
                     padding: "1px 1px 1px 1px",
                     fontSize: "18px",
-                    color: "#12b188",
+                    color: "#005F47",
                   }}
-                variant="contained"
+                variant="text"
                 >
                   {t("home.button.scan_qr_code")}
                 </Button>
