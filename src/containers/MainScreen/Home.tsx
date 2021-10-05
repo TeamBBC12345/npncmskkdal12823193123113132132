@@ -32,7 +32,7 @@ import { getVenueName } from "../../utils/qr";
 
 export const Home = () => {
   const { t } = useTranslation("main_screen");
-  // const [place, setPlace] = useState("");
+  const [place, setPlace] = useState("");
   const [license, setLicense] = useState("");
   const [leaveModalOpen, setLeaveModalOpen] = useState(false);
   const [leaveId, setLeaveId] = useState<null | string>(null);
@@ -50,13 +50,13 @@ export const Home = () => {
     return currentTime.format("YYYY-MM-DD, dddd");
   }, [currentTime]);
 
-  // const handlePlaceSubmit = () => {
-  //   enterLocation({
-  //     nameZh: place,
-  //     type: locationType.PLACE,
-  //     inputType: travelRecordInputType.MANUALLY,
-  //   });
-  // };
+  const handlePlaceSubmit = () => {
+    enterLocation({
+      nameZh: place,
+      type: locationType.PLACE,
+      inputType: travelRecordInputType.MANUALLY,
+    });
+  };
 
   const handleTaxiSubmit = () => {
     enterLocation({
@@ -123,6 +123,14 @@ export const Home = () => {
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
+              <Button
+                size="small"
+                color="primary"
+                disabled={isEmpty(trim(place))}
+                onClick={handlePlaceSubmit}
+              >
+                {t("home.button.go")}
+              </Button>
             </CardActions>
           </StyledCard>
           <StyledCard>
