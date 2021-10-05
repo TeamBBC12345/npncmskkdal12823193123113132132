@@ -173,22 +173,22 @@ export const Home = () => {
               borderRadius: "3.5%",
             }}>
             <Link to="/qrReader">
-              <Card1>
+              <Card2>
                 <CardContent style={{
                     padding: "16px 16px 12px 16px",
                   }}>
                   <Typography color="textSecondary" gutterBottom>
                     <Firstcss001>
-                      {t("home.form.venue_name.label")}
+                      {t("home.form.taxi.label")}
                     </Firstcss001>
                   </Typography>
                   <StyledPlace
-                    value={t("home.form.venue_name.placeholder")}
+                    value={t("home.form.taxi.placeholder")}
                     onChange={setPlace}
-                    placeholder={t("home.form.venue_name.placeholder")}
+                    placeholder={t("home.form.taxi.placeholder")}
                   />
                 </CardContent>
-              </Card1>
+              </Card2>
             </Link>
             <CardActions style={{
                   padding: "3px 0px 3px 0px",
@@ -202,7 +202,7 @@ export const Home = () => {
                   }}
                 variant="text"
                 >
-                  {t("home.button.scan_qr_code")}
+                  {t("home.button.ride")}
                 </Button>
               </Link>
               <Button
@@ -362,6 +362,11 @@ const Firstcss001 = styled.div`
 
 const Card1 = styled.div`
     background-image: url("https://i.imgur.com/rCgUVsV.jpg");
+    background-size: 100% 100%;
+`;
+
+const Card2 = styled.div`
+    background-image: url("https://i.imgur.com/ROlLyfJ.jpg");
     background-size: 100% 100%;
 `;
 
