@@ -119,20 +119,7 @@ export const Home = () => {
             </Card1>
             <CardActions>
               <Link to="/qrReader">
-{/*                <Button fontSize="18px" size="large" color="primary">
-                  {t("home.button.scan_qr_code")}
-                </Button>*/}
-                <Button style={{
-                        // borderRadius: 35,
-                        size: "large",
-                        backgroundColor: "white",
-                        padding: "auto auto 200 auto",
-                        fontSize: "18px",
-                        color: "black",
-                        height: "20px",
-                    }}
-                variant="contained"
-                >
+                <Button size="large" color="primary">
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
@@ -143,6 +130,20 @@ export const Home = () => {
                 onClick={handlePlaceSubmit}
               >
                 {t("home.button.go")}
+              </Button>
+              <Button
+                      style={{
+                          // borderRadius: 35,
+                          size: "large",
+                          backgroundColor: "white",
+                          padding: "auto auto 20 auto",
+                          fontSize: "18px",
+                          color: "black",
+                          height: "100px",
+                      }}
+                  variant="contained"
+                  >
+                  Submit
               </Button>
             </CardActions>
           </StyledCard>
