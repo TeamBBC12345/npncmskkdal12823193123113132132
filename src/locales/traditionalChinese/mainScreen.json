@@ -10,7 +10,7 @@
       },
       "taxi": {
         "label": "上車",
-        "placeholder": "按此上車2"
+        "placeholder": "乘搭的士時請掃描車廂內的車牌"
       }
     },
     "button": {

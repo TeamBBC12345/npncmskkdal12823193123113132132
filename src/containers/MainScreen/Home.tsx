@@ -103,6 +103,8 @@ export const Home = () => {
       </Welcome>
       <SliderWrapper>
         <Slider>
+
+
           <StyledCard style={{
               borderRadius: "3.5%",
             }}>
@@ -139,12 +141,6 @@ export const Home = () => {
                   {t("home.button.scan_qr_code")}
                 </Button>
               </Link>
-{/*              <Button
-                size="small"
-                color="primary"
-                disabled={isEmpty(trim(place))}
-                onClick={handlePlaceSubmit}
-              >*/}
               <Button
                 size="small"
                 disabled={isEmpty(trim(place))}
@@ -170,6 +166,76 @@ export const Home = () => {
               </Link>
             </CardActions>
           </StyledCard>
+
+          {/*-------------------------------------------*/}
+
+                    <StyledCard style={{
+              borderRadius: "3.5%",
+            }}>
+            <Link to="/qrReader">
+              <Card1>
+                <CardContent style={{
+                    padding: "16px 16px 12px 16px",
+                  }}>
+                  <Typography color="textSecondary" gutterBottom>
+                    <Firstcss001>
+                      {t("home.form.venue_name.label")}
+                    </Firstcss001>
+                  </Typography>
+                  <StyledPlace
+                    value={t("home.form.venue_name.placeholder")}
+                    onChange={setPlace}
+                    placeholder={t("home.form.venue_name.placeholder")}
+                  />
+                </CardContent>
+              </Card1>
+            </Link>
+            <CardActions style={{
+                  padding: "3px 0px 3px 0px",
+                }}>
+              <Link to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    padding: "1px 1px 1px 15px",
+                    fontSize: "18px",
+                    whiteSpace: "nowrap",
+                  }}
+                variant="text"
+                >
+                  {t("home.button.scan_qr_code")}
+                </Button>
+              </Link>
+              <Button
+                size="small"
+                disabled={isEmpty(trim(place))}
+                onClick={handlePlaceSubmit}
+                style={{
+                    color: "#ffffff",
+                }}
+              >
+                {t("home.button.go")}
+              </Button>
+              <Link style={{
+                    padding: "0px 0px 0px 38px",
+                  }} to="/qrReader">
+                <Button color="primary" style={{
+                    backgroundColor: "white",
+                    fontSize: "18px",
+                    color: "#12B188",
+                  }}
+                variant="text"
+                >
+                  <ArrowForwardIosIcon />
+                </Button>
+              </Link>
+            </CardActions>
+          </StyledCard>
+
+
+
+
+          {/*-------------------------------------------*/}
+
           <StyledCard>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -192,6 +258,9 @@ export const Home = () => {
               </Button>
             </CardActions>
           </StyledCard>
+
+
+
         </Slider>
       </SliderWrapper>
       <TravelRecordWrapper>
@@ -292,7 +361,7 @@ const Firstcss001 = styled.div`
 // `;
 
 const Card1 = styled.div`
-    background-image: url("https://i.imgur.com/93pswnb.jpg");
+    background-image: url("https://i.imgur.com/rCgUVsV.jpg");
     background-size: 100% 100%;
 `;
 
