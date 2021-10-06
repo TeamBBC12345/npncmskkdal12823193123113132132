@@ -17,7 +17,6 @@ import { getVenueName } from "../../utils/qr";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-// import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 type Props = {
   travelRecord: TravelRecord;
@@ -77,6 +76,7 @@ export const ConfirmPage = ({
             </Link>
           )}
         </Header>
+
         <MessageWrapper>
           {venueType === locationType.TAXI ? (
             <>
@@ -91,6 +91,7 @@ export const ConfirmPage = ({
           </PlaceWrapper>
           <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
         </MessageWrapper>
+
         <TickWrapper>
           <TickWrapperInner>
             <Tick src={tick} />
@@ -160,6 +161,7 @@ const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 20px;
 `;
 
 const TickWrapper = styled.div`
