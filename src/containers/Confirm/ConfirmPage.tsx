@@ -55,12 +55,12 @@ export const ConfirmPage = ({
     <>
       <PageWrapper>
         <Header>
-        <ImageList sx={{ width: 50, height: 50 }} cols={1} rowHeight={50}>
+        <ImageList sx={{ width: 75, height: 75 }} cols={1} rowHeight={75}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
-                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
                 alt={item.title}
                 loading="lazy"
               />
@@ -86,10 +86,10 @@ export const ConfirmPage = ({
           ) : (
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
-          <PlaceWrapper>
-            <Place  style={{
+          <PlaceWrapper style={{
               fontSize: "20px",
-            }} value={place || ""} readOnly />
+            }}>
+            <Place value={place || ""} readOnly />
           </PlaceWrapper>
           <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
         </MessageWrapper>
