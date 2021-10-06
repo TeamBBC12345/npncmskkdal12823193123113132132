@@ -68,7 +68,6 @@ export const ConfirmPage = ({
               <License>{t("message.res_mark")}:</License>
             </>
           ) : (
-            <img src="https://i.imgur.com/CkcB25H.png">
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
           <PlaceWrapper>
