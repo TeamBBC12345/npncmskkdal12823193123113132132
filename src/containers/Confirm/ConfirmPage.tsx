@@ -214,7 +214,7 @@ const AutoLeave = styled.div`
 const CheckBoxWrapper = styled.div`
   width: 100%;
   text-align: left;
-  padding-left: 24px;
+  padding-left: 0px;
   line-height: 32px;
 `;
 
