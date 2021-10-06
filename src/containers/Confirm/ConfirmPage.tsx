@@ -86,7 +86,9 @@ export const ConfirmPage = ({
               <License>{t("message.res_mark")}:</License>
             </>
           ) : (
-            <Msg>{t("message.you_have_entered_venue")}</Msg>
+            <Msg style={{
+              fontSize: "20px",
+            }}>{t("message.you_have_entered_venue")}</Msg>
           )}
           <PlaceWrapper>
             <Place value={place || ""} readOnly />
