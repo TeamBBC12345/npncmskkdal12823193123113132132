@@ -18,6 +18,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Stack from "@mui/material/Stack";
 
 import { LeaveModal } from "../../components/LeaveModal";
 import { Place } from "../../components/Place";
@@ -362,10 +363,98 @@ export const Home = () => {
             </CardActions>
           </StyledCard>
 
+          {/*----------------------------------------------------------------------------*/}
+
+          <Stack spacing={2}>
+            <CardContent
+              style={{
+                backgroundColor: "#B5E2D9",
+                borderRadius: "3.5%",
+                width: "200px",
+                height: "147px",
+                padding: "0 0 0 0"
+              }}
+            >
+              <Text001>
+                <Button
+                  style={{
+                    color: "black",
+                    whiteSpace: "nowrap",
+                    fontSize: "1px",
+                    fontWeight: "normal",
+                    padding: "0"
+                  }}
+                  variant="text"
+                >
+                  最後更新2021-10-10
+                </Button>
+              </Text001>
+              <Text002>
+                <Button
+                  style={{
+                    color: "black",
+                    whiteSpace: "nowrap",
+                    fontSize: "18px",
+                    padding: "5px 0px 0px 45px",
+                    fontWeight: "normal"
+                  }}
+                >
+                  感染風險通知
+                </Button>
+              </Text002>
+              <Text003>
+                <Button
+                  style={{
+                    color: "black",
+                    whiteSpace: "nowrap",
+                    fontSize: "28px",
+                    padding: "0px 0px 0px 80px",
+                    left: "-5px",
+                    top: "-10px"
+                  }}
+                >
+                  0次
+                </Button>
+              </Text003>
+              <Text005>
+                <Button
+                  style={{
+                    backgroundColor: "#12B188",
+                    color: "white",
+                    whiteSpace: "nowrap",
+                    fontSize: "13px",
+                    padding: "5px 47px 5px 47px",
+                    left: "13px",
+                    top: "-10px",
+                    fontWeight: "normal"
+                  }}
+                >
+                  更多詳細訊息
+                </Button>
+              </Text005>
+            </CardContent>
+          </Stack>
+
+
+
+
+
+
+
+
+          {/*-----------------------------------------------------------------------------*/}
+
 
 
         </Slider>
       </SliderWrapper>
+
+
+      <LatestWrapper>
+
+      </LatestWrapper>
+
+
       <TravelRecordWrapper>
         <TravelRecordInner>
           <h3>{t("home.you_have_entered")}</h3>
@@ -561,4 +650,29 @@ const Msg = styled.div`
   line-height: 48px;
 `;
 
+const Text001 = styled.div`
+  /* align-items: flex-start; */
+  line-height: 0;
+  padding: 10px 0px 0px 10px;
+  overflow: hidden;
+`;
+
+const Text002 = styled.div`
+  align-items: center;
+  overflow: hidden;
+  /* line-height: 0; */
+  padding: 0px 0px 0px 0px;
+`;
+
+const Text003 = styled.div`
+  align-items: center;
+  /* overflow: hidden; */
+  padding: 0px 0px 0px 0px;
+`;
+
+const Text005 = styled.div`
+  align-items: center;
+  /* overflow: hidden; */
+  padding: 0px 0px 0px 0px;
+`;
 
