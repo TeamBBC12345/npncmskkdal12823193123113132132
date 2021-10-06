@@ -455,7 +455,7 @@ export const Home = () => {
 
       <TravelRecordWrapper style={{
             minHeight: "200px",
-            padding: "30px 0px 0px 0px",
+            padding: "150px 0px 0px 0px",
           }}>
         <TravelRecordInner>
           <h3>{t("home.you_have_entered")}</h3>
