@@ -367,11 +367,16 @@ export const Home = () => {
 
       {/*----------------------------------------------------------------------------*/}
 
-          <Stack spacing={2}>
+          <Stack style={{
+            backgroundColor: "white",
+            padding: "0 0 0 25px",
+            minHeight: "150px",
+          }}
+          spacing={2}>
             <CardContent
               style={{
                 backgroundColor: "#B5E2D9",
-                borderRadius: "3.5%",
+                borderRadius: "5%",
                 width: "200px",
                 height: "147px",
                 padding: "0 0 0 0"
@@ -449,7 +454,9 @@ export const Home = () => {
 
 
       <TravelRecordWrapper>
-        <TravelRecordInner>
+        <TravelRecordInner style={{
+            minHeight: "200px",
+          }}>
           <h3>{t("home.you_have_entered")}</h3>
           {isEmpty(currentTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
