@@ -86,10 +86,12 @@ export const ConfirmPage = ({
           ) : (
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
-          <PlaceWrapper>
-            <Place value={place || ""} readOnly />
-          </PlaceWrapper>
-          <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
+          <Style1>
+            <PlaceWrapper>
+              <Place value={place || ""} readOnly />
+            </PlaceWrapper>
+            <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
+          </Style1>
         </MessageWrapper>
 
         <TickWrapper>
@@ -153,6 +155,11 @@ const Cross = styled.img`
 
 const PlaceWrapper = styled.div`
   padding: 0 32px;
+
+`;
+
+const Style1 = styled.div`
+  font-size: 20px;
 `;
 
 const MessageWrapper = styled.div`
@@ -161,7 +168,6 @@ const MessageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 20px;
 `;
 
 const TickWrapper = styled.div`
