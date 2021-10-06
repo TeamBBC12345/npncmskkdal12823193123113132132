@@ -52,7 +52,8 @@ export const ConfirmPage = ({
     <>
       <PageWrapper>
         <Header>
-          {confirmPageIcon && <Logo src={confirmPageIcon} />}
+          {/*{confirmPageIcon && <Logo src={confirmPageIcon} />}*/}
+          {confirmPageIcon && <Logo src="https://i.imgur.com/CkcB25H.png" />}
           {readOnly ? (
             <Cross src={cross} />
           ) : (
