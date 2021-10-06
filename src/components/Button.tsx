@@ -4,9 +4,9 @@ export const ConfirmButton = styled.button<{ shadowed?: boolean }>`
   display: block;
   margin: auto;
   margin-bottom: 16px;
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px 0;
-  width: 80%;
+  width: 50%;
   border-radius: 48px;
   flex-shrink: 0;
   max-width: 280px;
