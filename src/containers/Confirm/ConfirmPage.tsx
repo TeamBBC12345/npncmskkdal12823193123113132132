@@ -77,7 +77,9 @@ export const ConfirmPage = ({
           )}
         </Header>
 
-        <MessageWrapper>
+        <MessageWrapper style={{
+              fontSize: "20px",
+            }}>
           {venueType === locationType.TAXI ? (
             <>
               <Msg>{t("message.you_have_entered_taxi")}</Msg>
@@ -86,9 +88,7 @@ export const ConfirmPage = ({
           ) : (
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
-          <PlaceWrapper style={{
-              fontSize: "20px",
-            }}>
+          <PlaceWrapper>
             <Place value={place || ""} readOnly />
           </PlaceWrapper>
           <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
