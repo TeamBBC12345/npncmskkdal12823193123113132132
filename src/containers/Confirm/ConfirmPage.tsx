@@ -52,8 +52,7 @@ export const ConfirmPage = ({
     <>
       <PageWrapper>
         <Header>
-          {/*{confirmPageIcon && <Logo src={confirmPageIcon} />}*/}
-          {confirmPageIcon && <Logo src="https://i.imgur.com/CkcB25H.png" />}
+          {confirmPageIcon && <Logo src={confirmPageIcon} />}
           {readOnly ? (
             <Cross src={cross} />
           ) : (
@@ -69,6 +68,7 @@ export const ConfirmPage = ({
               <License>{t("message.res_mark")}:</License>
             </>
           ) : (
+            <img src="https://i.imgur.com/CkcB25H.png">
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
           <PlaceWrapper>
