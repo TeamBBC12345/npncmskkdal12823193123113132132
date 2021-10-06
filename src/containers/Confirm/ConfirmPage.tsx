@@ -15,6 +15,10 @@ import { TravelRecord } from "../../hooks/useTravelRecord";
 import { dayjs } from "../../utils/dayjs";
 import { getVenueName } from "../../utils/qr";
 
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+
 type Props = {
   travelRecord: TravelRecord;
   readOnly?: boolean;
@@ -52,6 +56,18 @@ export const ConfirmPage = ({
     <>
       <PageWrapper>
         <Header>
+        <ImageList sx={{ width: 50, height: 50 }} cols={1} rowHeight={50}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
           {confirmPageIcon && <Logo src={confirmPageIcon} />}
           {readOnly ? (
             <Cross src={cross} />
@@ -214,3 +230,11 @@ const ActionGroup = styled.div`
   width: 100%;
   flex-shrink: 0;
 `;
+
+const itemData = [
+  {
+    img: "https://i.imgur.com/CkcB25H.png",
+    title: "BBC",
+    author: "Hello"
+  }
+];
