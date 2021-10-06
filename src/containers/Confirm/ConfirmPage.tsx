@@ -128,6 +128,7 @@ export const ConfirmPage = ({
 };
 
 const PageWrapper = styled.div`
+  font-size: 20px;
   width: 100%;
   height: 100%;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
