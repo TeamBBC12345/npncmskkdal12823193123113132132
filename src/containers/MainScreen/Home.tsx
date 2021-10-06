@@ -450,10 +450,6 @@ export const Home = () => {
       </SliderWrapper>
 
 
-      <LatestWrapper>
-
-      </LatestWrapper>
-
 
       <TravelRecordWrapper>
         <TravelRecordInner>
