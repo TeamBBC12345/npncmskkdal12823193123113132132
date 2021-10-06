@@ -219,10 +219,11 @@ const CheckBoxWrapper = styled.div`
 `;
 
 const Change = styled.div`
+  font-size: 16px;
   flex-shrink: 0;
   padding-right: 24px;
   line-height: 32px;
-  color: #fed426;
+  color: #FFE43D;
   text-decoration: underline;
 `;
 
