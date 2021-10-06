@@ -128,7 +128,7 @@ export const ConfirmPage = ({
 const PageWrapper = styled.div`
   width: 100%;
   height: 100%;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -216,10 +216,12 @@ const CheckBoxWrapper = styled.div`
   text-align: left;
   padding-left: 0px;
   line-height: 32px;
+  font-weight: bold;
 `;
 
 const Change = styled.div`
   font-size: 16px;
+  font-weight: bold;
   flex-shrink: 0;
   padding-right: 24px;
   line-height: 32px;
