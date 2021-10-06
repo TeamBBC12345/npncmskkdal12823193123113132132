@@ -17,7 +17,7 @@ import { getVenueName } from "../../utils/qr";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
+// import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 type Props = {
   travelRecord: TravelRecord;
