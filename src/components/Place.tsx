@@ -32,7 +32,7 @@ export const Place = ({
 
 export const StyledInput = styled(TextareaAutosize)`
   text-align: center;
-  font-size: 32px;
+  font-size: 20px;
   background-color: transparent;
   border: 0;
   outline: none;
