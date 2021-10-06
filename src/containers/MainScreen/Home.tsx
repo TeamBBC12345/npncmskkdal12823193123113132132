@@ -453,10 +453,11 @@ export const Home = () => {
 
 
 
-      <TravelRecordWrapper>
-        <TravelRecordInner style={{
+      <TravelRecordWrapper style={{
             minHeight: "200px",
+            padding: "30px 0px 0px 0px",
           }}>
+        <TravelRecordInner>
           <h3>{t("home.you_have_entered")}</h3>
           {isEmpty(currentTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
