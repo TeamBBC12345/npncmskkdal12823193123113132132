@@ -86,11 +86,11 @@ export const ConfirmPage = ({
               <License>{t("message.res_mark")}:</License>
             </>
           ) : (
-            <Msg style={{
-              fontSize: "20px",
-            }}>{t("message.you_have_entered_venue")}</Msg>
+            <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
-          <PlaceWrapper>
+          <PlaceWrapper style={{
+              fontSize: "20px",
+            }}>
             <Place value={place || ""} readOnly />
           </PlaceWrapper>
           <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
