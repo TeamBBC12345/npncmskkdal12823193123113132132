@@ -86,12 +86,12 @@ export const ConfirmPage = ({
           ) : (
             <Msg>{t("message.you_have_entered_venue")}</Msg>
           )}
-          <Style1>
-            <PlaceWrapper>
-              <Place value={place || ""} readOnly />
-            </PlaceWrapper>
-            <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
-          </Style1>
+          <PlaceWrapper>
+            <Place  style={{
+              fontSize: "20px",
+            }} value={place || ""} readOnly />
+          </PlaceWrapper>
+          <Time>{date.format("YYYY-MM-DD HH:mm")}</Time>
         </MessageWrapper>
 
         <TickWrapper>
@@ -158,9 +158,6 @@ const PlaceWrapper = styled.div`
 
 `;
 
-const Style1 = styled.div`
-  font-size: 20px;
-`;
 
 const MessageWrapper = styled.div`
   width: 100%;
