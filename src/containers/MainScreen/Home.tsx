@@ -389,7 +389,7 @@ export const Home = () => {
                     whiteSpace: "nowrap",
                     fontSize: "1px",
                     fontWeight: "normal",
-                    padding: "0"
+                    padding: "1px 1px 1px 1px"
                   }}
                   variant="text"
                 >
@@ -653,7 +653,7 @@ const Msg = styled.div`
 
 const Text001 = styled.div`
   /* align-items: flex-start; */
-  line-height: 0;
+  line-height: 1;
   padding: 10px 0px 0px 10px;
   overflow: hidden;
 `;
