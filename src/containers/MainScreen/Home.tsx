@@ -385,11 +385,11 @@ export const Home = () => {
               <Text001>
                 <Button
                   style={{
+                    padding: "1px 1px 1px 1px",
                     color: "black",
                     whiteSpace: "nowrap",
                     fontSize: "1px",
                     fontWeight: "normal",
-                    padding: "1px 1px 1px 1px"
                   }}
                   variant="text"
                 >
