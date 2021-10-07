@@ -629,7 +629,7 @@ const Card3 = styled.div`
 `;
 
 const Card5 = styled.div`
-    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover5.jpg");
+    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover5.png");
     background-size: 100% 100%;
 `;
 
