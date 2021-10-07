@@ -32,7 +32,15 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     label: t("home.name"),
     component: <Home />,
     icon: 
-    <ImageList sx={{ width: 24, height: 24 }} cols={1} rowHeight={24}>
+    <ImageList 
+      sx={{ width: 24, height: 24 }} 
+      cols={1} 
+      rowHeight={24}
+      style={{
+          max-height: "15px",
+          overflow: "visible",
+      }}
+      >
       {itemData_001.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -49,19 +57,76 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.TRAVEL_RECORD,
     label: t("travel_record.name"),
     component: <TravelRecord />,
-    icon: <AssignmentOutlinedIcon />,
+    icon: <ImageList 
+      sx={{ width: 24, height: 24 }} 
+      cols={1} 
+      rowHeight={24}
+      style={{
+          max-height: "15px",
+          overflow: "visible",
+      }}
+      >
+      {itemData_003.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}`}
+            srcSet={`${item.img}`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>,
   },
   {
     key: tabs.BOOKMARK,
     label: t("bookmark.name"),
     component: <Bookmark />,
-    icon: <BookmarkIcon />,
+    icon: <ImageList 
+      sx={{ width: 24, height: 24 }} 
+      cols={1} 
+      rowHeight={24}
+      style={{
+          max-height: "15px",
+          overflow: "visible",
+      }}
+      >
+      {itemData_002.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}`}
+            srcSet={`${item.img}`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>,
   },
   {
     key: tabs.SETTINGS,
     label: t("setting.name"),
     component: <Settings />,
-    icon: <SettingsIcon />,
+    icon: <ImageList 
+      sx={{ width: 24, height: 24 }} 
+      cols={1} 
+      rowHeight={24}
+      style={{
+          max-height: "15px",
+          overflow: "visible",
+      }}
+      >
+      {itemData_005.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}`}
+            srcSet={`${item.img}`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>,
   },
 ];
 
@@ -121,7 +186,37 @@ const NavWrapper = styled.div`
 
 const itemData_001 = [
   {
-    img: '../assets/cus/app_home_selected.png',
+    img: 'https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/app_home_selected.png',
     title: 'HOME_ICON',
   },
 ];
+
+const itemData_002 = [
+  {
+    img: 'https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/app_inbox.png',
+    title: 'INBOX_ICON',
+  },
+];
+
+const itemData_003 = [
+  {
+    img: 'https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/app_record.png',
+    title: 'RECORD_ICON',
+  },
+];
+
+const itemData_005 = [
+  {
+    img: 'https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/app_settings.png',
+    title: 'SETTINGS_ICON',
+  },
+];
+
+
+
+
+
+
+
+
+
