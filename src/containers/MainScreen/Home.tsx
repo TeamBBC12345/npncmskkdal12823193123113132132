@@ -52,6 +52,10 @@ export const Home = () => {
     return currentTime.format("YYYY-MM-DD, dddd");
   }, [currentTime]);
 
+  const today1 = useMemo(() => {
+    return currentTime.format("YYYY-MM-DD");
+  }, [currentTime]);
+
   const handlePlaceSubmit = () => {
     enterLocation({
       nameZh: place,
@@ -393,7 +397,7 @@ export const Home = () => {
                   }}
                   variant="text"
                 >
-                  最後更新2021-10-10
+                  最後更新2021-10-10 <div>{today1}</div>
                 </Button>
               </Text001>
               <Text002>
