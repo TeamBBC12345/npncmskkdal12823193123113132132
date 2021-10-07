@@ -384,7 +384,8 @@ export const Home = () => {
                 borderRadius: "5%",
                 width: "200px",
                 height: "147px",
-                padding: "0 0 0 0"
+                padding: "0 0 0 0",
+                minWidth: "200px",
               }}
             >
               <Text001>
@@ -451,7 +452,8 @@ export const Home = () => {
                   borderRadius: "3.5%",
                   width: "200px",
                   height: "147px",
-                  padding: "0 0 0 0"
+                  padding: "0 0 0 0",
+                  minWidth: "200px",
                 }}
               >
                 <Image001>
