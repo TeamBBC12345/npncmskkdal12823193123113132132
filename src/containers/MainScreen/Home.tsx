@@ -656,6 +656,7 @@ const Text001 = styled.div`
   line-height: 1;
   padding: 10px 0px 0px 10px;
   overflow: hidden;
+  height: 20px;
 `;
 
 const Text002 = styled.div`
