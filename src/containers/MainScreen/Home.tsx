@@ -580,7 +580,7 @@ const PageWrapper = styled.div`
 
 const Welcome = styled.div`
   color: #fff;
-  padding: 40px 24px 32px 24px;
+  padding: 60px 24px 32px 24px;
   flex-shrink: 0;
 `;
 
