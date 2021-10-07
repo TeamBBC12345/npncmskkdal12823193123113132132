@@ -477,11 +477,13 @@ export const Home = () => {
                       </ImageListItem>
                     ))}
                   </ImageList>
-                </Image001 style={{
+                </Image001>
+                <TextB002  style={{
                   padding: "15px 0px 0px 65px",
                   fontSize: "15px",
                 }}>
-                <TextB002>電子針卡</TextB002>
+                電子針卡
+                </TextB002>
               </CardContent>
 
 
