@@ -37,7 +37,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
       cols={1} 
       rowHeight={24}
       style={{
-          max-height: "15px",
+          maxHeight: "15px",
           overflow: "visible",
       }}
       >
@@ -62,7 +62,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
       cols={1} 
       rowHeight={24}
       style={{
-          max-height: "15px",
+          maxHeight: "15px",
           overflow: "visible",
       }}
       >
@@ -87,7 +87,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
       cols={1} 
       rowHeight={24}
       style={{
-          max-height: "15px",
+          maxHeight: "15px",
           overflow: "visible",
       }}
       >
@@ -112,7 +112,7 @@ const tabsArr = ({ t }: { t: TFunction }) => [
       cols={1} 
       rowHeight={24}
       style={{
-          max-height: "15px",
+          maxHeight: "15px",
           overflow: "visible",
       }}
       >
