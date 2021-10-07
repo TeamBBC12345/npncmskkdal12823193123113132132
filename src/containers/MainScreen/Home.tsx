@@ -614,22 +614,22 @@ const Firstcss003 = styled.div`
 // `;
 
 const Card1 = styled.div`
-    background-image: url("https://i.imgur.com/rCgUVsV.jpg");
+    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover1.jpg");
     background-size: 100% 100%;
 `;
 
 const Card2 = styled.div`
-    background-image: url("https://i.imgur.com/ROlLyfJ.jpg");
+    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover2.jpg");
     background-size: 100% 100%;
 `;
 
 const Card3 = styled.div`
-    background-image: url("https://i.imgur.com/eXYnI5i.jpg");
+    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover3.jpg");
     background-size: 100% 100%;
 `;
 
 const Card5 = styled.div`
-    background-image: url("https://i.imgur.com/0nCIVlV.png");
+    background-image: url("https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/cus/cover5.jpg");
     background-size: 100% 100%;
 `;
 
