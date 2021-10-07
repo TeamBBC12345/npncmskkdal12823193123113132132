@@ -31,7 +31,8 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.HOME,
     label: t("home.name"),
     component: <Home />,
-    icon: <ImageList sx={{ width: 24, height: 24 }} cols={1} rowHeight={24}>
+    icon: 
+    <ImageList sx={{ width: 24, height: 24 }} cols={1} rowHeight={24}>
       {itemData_001.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -113,7 +114,7 @@ const PageWrapper = styled.div`
 const NavWrapper = styled.div`
   flex-shrink: 0;
   box-shadow: 0 0 3.6px 0 rgb(0 0 0 / 13%), 0 0 0.9px 0 rgb(0 0 0 / 11%);
-  padding-bottom: 8px;
+  padding-bottom: 20px;
   background-color: #fff;
   z-index: 1;
 `;
