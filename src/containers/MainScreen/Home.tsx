@@ -375,6 +375,7 @@ export const Home = () => {
             backgroundColor: "white",
             padding: "0 0 0 25px",
             minHeight: "150px",
+            overflow: "scroll",
           }}
           spacing={1}
           direction="row">
