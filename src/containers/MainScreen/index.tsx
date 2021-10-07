@@ -121,7 +121,7 @@ const NavWrapper = styled.div`
 
 const itemData_001 = [
   {
-    img: 'https://i.imgur.com/3K1LyXg.png',
-    title: 'Breakfast',
+    img: '../assets/cus/app_home_selected.png',
+    title: 'HOME_ICON',
   },
 ];
