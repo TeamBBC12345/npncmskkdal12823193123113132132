@@ -458,7 +458,14 @@ export const Home = () => {
                 }}
               >
                 <Image001>
-                  <ImageList sx={{ width: 65, height: 65 }} cols={1} rowHeight={65}>
+                  <ImageList 
+                    sx={{ width: 65, height: 65 }} 
+                    cols={1} 
+                    rowHeight={65}
+                    style={{
+                      padding: "10px 0px 0px 70px",
+                    }}
+                  >
                     {itemData.map((item) => (
                       <ImageListItem key={item.img}>
                         <img
@@ -716,7 +723,6 @@ const Text005 = styled.div`
 
 const Image001 = styled.div`
   align-items: center;
-  padding: 10px 0px 0px 70px;
 `;
 
 const TextB002 = styled.div`
