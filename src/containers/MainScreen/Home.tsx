@@ -463,7 +463,7 @@ export const Home = () => {
                     cols={1} 
                     rowHeight={65}
                     style={{
-                      padding: "10px 0px 0px 70px",
+                      padding: "20px 0px 0px 70px",
                     }}
                   >
                     {itemData.map((item) => (
@@ -477,7 +477,10 @@ export const Home = () => {
                       </ImageListItem>
                     ))}
                   </ImageList>
-                </Image001>
+                </Image001 style={{
+                  padding: "15px 0px 0px 65px",
+                  fontSize: "15px",
+                }}>
                 <TextB002>電子針卡</TextB002>
               </CardContent>
 
@@ -727,7 +730,6 @@ const Image001 = styled.div`
 
 const TextB002 = styled.div`
   align-items: center;
-  padding: 0px 0px 0px 65px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 `;
