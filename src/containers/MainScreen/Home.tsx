@@ -397,7 +397,7 @@ export const Home = () => {
                   }}
                   variant="text"
                 >
-                  最後更新2021-10-10 <div>{today1}</div>
+                  最後更新<div>{today1}</div>
                 </Button>
               </Text001>
               <Text002>
