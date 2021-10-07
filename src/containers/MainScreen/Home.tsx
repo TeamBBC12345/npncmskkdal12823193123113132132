@@ -19,6 +19,8 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Stack from "@mui/material/Stack";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 
 import { LeaveModal } from "../../components/LeaveModal";
 import { Place } from "../../components/Place";
@@ -108,8 +110,6 @@ export const Home = () => {
       </Welcome>
       <SliderWrapper>
         <Slider>
-
-
           <StyledCard style={{
               borderRadius: "3.5%",
             }}>
@@ -376,7 +376,8 @@ export const Home = () => {
             padding: "0 0 0 25px",
             minHeight: "150px",
           }}
-          spacing={2}>
+          spacing={1}
+          direction="row">
             <CardContent
               style={{
                 backgroundColor: "#B5E2D9",
@@ -444,6 +445,35 @@ export const Home = () => {
                 </Button>
               </Text005>
             </CardContent>
+            <CardContent
+                style={{
+                  backgroundColor: "#12B188",
+                  borderRadius: "3.5%",
+                  width: "200px",
+                  height: "147px",
+                  padding: "0 0 0 0"
+                }}
+              >
+                <Image001>
+                  <ImageList sx={{ width: 65, height: 65 }} cols={1} rowHeight={65}>
+                    {itemData.map((item) => (
+                      <ImageListItem key={item.img}>
+                        <img
+                          src={`${item.img}`}
+                          srcSet={`${item.img}`}
+                          alt={item.title}
+                          loading="lazy"
+                        />
+                      </ImageListItem>
+                    ))}
+                  </ImageList>
+                </Image001>
+                <TextB002>電子針卡</TextB002>
+              </CardContent>
+
+
+
+
           </Stack>
 
 
@@ -680,4 +710,25 @@ const Text005 = styled.div`
   /* overflow: hidden; */
   padding: 0px 0px 0px 0px;
 `;
+
+const Image001 = styled.div`
+  align-items: center;
+  padding: 10px 0px 0px 70px;
+`;
+
+const TextB002 = styled.div`
+  align-items: center;
+  padding: 0px 0px 0px 65px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+`;
+
+const itemData = [
+  {
+    img:
+      "https://raw.githubusercontent.com/Error4046716/Error5081/main/src/assets/app_assets_icon_vaccine.png",
+    title: "000",
+    author: "Vaccine"
+  }
+];
 
