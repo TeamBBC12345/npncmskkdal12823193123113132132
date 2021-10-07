@@ -486,7 +486,8 @@ export const Home = () => {
                 </TextB002>
               </CardContent>
 
-
+              <CardContent>
+              </CardContent>
 
 
           </Stack>

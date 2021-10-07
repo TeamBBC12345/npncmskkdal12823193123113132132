@@ -16,6 +16,9 @@ import { Home } from "./Home";
 import { Settings } from "./Settings";
 import { TravelRecord } from "./TravelRecord";
 
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+
 enum tabs {
   HOME = "HOME",
   TRAVEL_RECORD = "TRAVEL_RECORD",
@@ -28,7 +31,18 @@ const tabsArr = ({ t }: { t: TFunction }) => [
     key: tabs.HOME,
     label: t("home.name"),
     component: <Home />,
-    icon: <HomeIcon />,
+    icon: <ImageList sx={{ width: 24, height: 24 }} cols={1} rowHeight={24}>
+      {itemData_001.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            src={`${item.img}`}
+            srcSet={`${item.img}`}
+            alt={item.title}
+            loading="lazy"
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>,
   },
   {
     key: tabs.TRAVEL_RECORD,
@@ -104,4 +118,9 @@ const NavWrapper = styled.div`
   z-index: 1;
 `;
 
-
+const itemData_001 = [
+  {
+    img: 'https://i.imgur.com/3K1LyXg.png',
+    title: 'Breakfast',
+  },
+];
