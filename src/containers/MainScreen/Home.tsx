@@ -388,7 +388,7 @@ export const Home = () => {
                     padding: "1px 1px 1px 1px",
                     color: "black",
                     whiteSpace: "nowrap",
-                    fontSize: "1px",
+                    fontSize: "10px",
                     fontWeight: "normal",
                   }}
                   variant="text"
@@ -653,7 +653,6 @@ const Msg = styled.div`
 
 const Text001 = styled.div`
   /* align-items: flex-start; */
-  line-height: 1;
   padding: 10px 0px 0px 10px;
   overflow: hidden;
   height: 20px;
