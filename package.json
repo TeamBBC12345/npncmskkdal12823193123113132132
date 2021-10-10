@@ -3,7 +3,7 @@
   "version": "2.1.3",
   "private": true,
   "homepage": "./",
-  "repository": "github:cError4046716/Error5081",
+  "repository": "gitlab:codogo-b/back-home-safe",
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.3",
     "@material-ui/core": "^4.11.4",
