@@ -10,8 +10,8 @@ import {
 import BookmarkIcon from "@material-ui/icons/MailOutline";
 import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 import DeleteIcon from "@material-ui/icons/Delete";
-import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
-import StoreIcon from "@material-ui/icons/Store";
+// import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
+// import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
 import { isEmpty } from "ramda";
 import React from "react";
@@ -20,7 +20,7 @@ import styled from "styled-components";
 
 import incognitoIcon from "../../assets/incognito.svg";
 import { Header } from "../../components/Header";
-import { locationType, useBookmarkLocation } from "../../hooks/useBookmark";
+// import { locationType, useBookmarkLocation } from "../../hooks/useBookmark";
 import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
 import { getVenueName } from "../../utils/qr";
