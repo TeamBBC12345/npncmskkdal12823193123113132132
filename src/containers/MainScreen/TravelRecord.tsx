@@ -3,6 +3,7 @@ import {
   IconButton,
   List,
   ListItem,
+  ListItemIcon,
   ListItemSecondaryAction,
   ListItemText,
 } from "@material-ui/core";
@@ -59,13 +60,9 @@ export const TravelRecord = () => {
             return (
               <React.Fragment key={item.id}>
                 <ListItem>
-                  // <ListItemIcon>
-                  //   {item.type === locationType.TAXI ? (
-                  //     <LocalTaxiIcon />
-                  //   ) : (
-                  //     <StoreIcon />
-                  //   )}
-                  // </ListItemIcon>
+                  <ListItemIcon>
+
+                  </ListItemIcon>
                   <ListItemText
                     primary={name}
                     secondary={`${dayjs(item.inTime).format(
