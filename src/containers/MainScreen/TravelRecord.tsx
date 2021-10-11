@@ -7,9 +7,9 @@ import {
   ListItemSecondaryAction,
   ListItemText,
 } from "@material-ui/core";
-import BookmarkIcon from "@material-ui/icons/MailOutline";
-import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
-import DeleteIcon from "@material-ui/icons/Delete";
+// import BookmarkIcon from "@material-ui/icons/MailOutline";
+// import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
+// import DeleteIcon from "@material-ui/icons/Delete";
 // import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 // import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
@@ -60,7 +60,9 @@ export const TravelRecord = () => {
             return (
               <React.Fragment key={item.id}>
                 <ListItem>
-                  <ListItemIcon>
+                  <ListItemIcon style={{
+                    minWidth: "0px",
+                  }}>
 
                   </ListItemIcon>
                   <ListItemText
@@ -82,7 +84,7 @@ export const TravelRecord = () => {
                           : createBookmarkLocation(item);
                       }}
                     >
-                      {bookmarkId ? <BookmarkIcon /> : <BookmarkBorderIcon />}
+
                     </IconButton>
                     <IconButton
                       edge="end"
@@ -92,7 +94,7 @@ export const TravelRecord = () => {
                       }}
                       disabled={incognito}
                     >
-                      <DeleteIcon />
+
                     </IconButton>
                   </ListItemSecondaryAction>
                 </ListItem>
