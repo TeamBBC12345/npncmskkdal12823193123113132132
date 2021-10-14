@@ -1,9 +1,4 @@
 import {
-  Button,
-  CardActions,
-  CardHeader,
-
-
   Divider,
   IconButton,
   List,
@@ -30,18 +25,6 @@ import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
 import { getVenueName } from "../../utils/qr";
 
-
-
-import { Link } from "react-router-dom";
-import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
-import StoreIcon from "@material-ui/icons/Store";
-import BookmarkIcon from "@material-ui/icons/MailOutline";
-import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
-
-
-
-
-
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
   const {
@@ -49,7 +32,6 @@ export const TravelRecord = () => {
     removeTravelRecord,
     incognito,
     autoRemoveRecordDay,
-    currentTravelRecord,
   } = useTravelRecord();
   const { language } = useI18n();
   const {
@@ -61,9 +43,6 @@ export const TravelRecord = () => {
   return (
     <PageWrapper>
       <Header name={t("travel_record.name")} />
-
-
-
       <ContentWrapper>
         <List component="nav">
           {incognito && (
@@ -84,8 +63,8 @@ export const TravelRecord = () => {
                   <ListItemIcon style={{
                     minWidth: "0px",
                   }}>
-                  </ListItemIcon>
 
+                  </ListItemIcon>
                   <ListItemText
                     primary={name}
                     secondary={`${dayjs(item.inTime).format(
@@ -96,7 +75,6 @@ export const TravelRecord = () => {
                         : ""
                     }`}
                   />
-
                   <ListItemSecondaryAction>
                     <IconButton
                       aria-label="settings"
@@ -129,15 +107,11 @@ export const TravelRecord = () => {
       <AutoRemoveMessageLine>
         <div>........</div>
       </AutoRemoveMessageLine>
-
-
       <AutoRemoveMessage>
         {t("travel_record.message.auto_remove_record", {
           day: autoRemoveRecordDay,
         })}
       </AutoRemoveMessage>
-
-
     </PageWrapper>
   );
 };
@@ -187,16 +161,4 @@ const AutoRemoveMessage = styled.div`
   color: rgba(0, 0, 0, 0.93);
   font-size:x-small;
   font-weight: bold;
-`;
-
-
-
-
-
-
-
-
-
-const TravelRecordInner = styled.div`
-  padding: 0 16px;
 `;
