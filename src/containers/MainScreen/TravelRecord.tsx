@@ -109,16 +109,18 @@ export const TravelRecord = () => {
               </React.Fragment>
             );
           })}
-        </List>
 
-
-        {currentTravelRecord.map((item) => {
+          {currentTravelRecord.map((item) => {
             const bookmarkId = getBookmarkLocationId(item);
             return (
                 <React.Fragment key={item.id}>
                 </React.Fragment>
               );
-        })}
+          })}
+        </List>
+
+
+
 
 
 
