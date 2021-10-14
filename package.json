@@ -90,5 +90,5 @@
     "precompress": "^6.3.2",
     "prettier": "^2.3.0",
     "standard-version": "^9.3.0"
-  },
+  }
 }
