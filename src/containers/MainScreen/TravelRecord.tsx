@@ -116,6 +116,7 @@ export const TravelRecord = () => {
             const bookmarkId = getBookmarkLocationId(item);
             return (
                 <React.Fragment key={item.id}>
+                </React.Fragment>
               );
         })}
 
