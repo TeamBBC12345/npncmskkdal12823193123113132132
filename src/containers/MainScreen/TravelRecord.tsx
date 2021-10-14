@@ -115,7 +115,9 @@ export const TravelRecord = () => {
 
         {currentTravelRecord.map((item) => {
             const bookmarkId = getBookmarkLocationId(item);
-            return ()
+            return (
+                <React.Fragment key={item.id}>
+              );
         })}
 
 
