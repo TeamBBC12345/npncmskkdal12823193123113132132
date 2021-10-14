@@ -17,8 +17,6 @@ import dayjs from "dayjs";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-
-
 import incognitoIcon from "../../assets/incognito.svg";
 import { Header } from "../../components/Header";
 import { useBookmarkLocation } from "../../hooks/useBookmark";
@@ -52,9 +50,11 @@ export const TravelRecord = () => {
               {t("travel_record.message.incognito_activated")}
             </Msg>
           )}
-{/*          {isEmpty(pastTravelRecord) && (
+          {isEmpty(pastTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
-          )}*/}
+          )}
+
+
           {pastTravelRecord.map((item) => {
             const name = getVenueName(item, language);
             const bookmarkId = getBookmarkLocationId(item);

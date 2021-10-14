@@ -509,9 +509,13 @@ export const Home = () => {
           }}>
         <TravelRecordInner>
           <h3>{t("home.you_have_entered")}</h3>
-          {isEmpty(currentTravelRecord) && (
+
+
+{/*          {isEmpty(currentTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
-          )}
+          )}*/}
+
+          
           {currentTravelRecord.map((item) => {
             const bookmarkId = getBookmarkLocationId(item);
             return (
