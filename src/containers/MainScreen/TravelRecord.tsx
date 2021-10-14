@@ -64,26 +64,6 @@ export const TravelRecord = () => {
 
 
 
-
-
-      {pastTravelRecord.map((item) => {
-            const name = getVenueName(item, language);
-            const bookmarkId = getBookmarkLocationId(item);
-            return (
-              <React.Fragment key={item.id}>
-                <ListItem>
-                  <ListItemIcon style={{
-                    minWidth: "0px",
-                  }}>
-                  </ListItemIcon>
-                </ListItem>
-            );
-      })}
-
-
-
-
-
       <ContentWrapper>
         <List component="nav">
           {incognito && (
