@@ -1,4 +1,5 @@
 import {
+  Button,
   Divider,
   IconButton,
   List,
@@ -6,12 +7,15 @@ import {
   ListItemIcon,
   ListItemSecondaryAction,
   ListItemText,
+  CardActions,
+  CardHeader,
 } from "@material-ui/core";
-// import BookmarkIcon from "@material-ui/icons/MailOutline";
-// import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
+import { Link } from "react-router-dom";
+import BookmarkIcon from "@material-ui/icons/MailOutline";
+import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 // import DeleteIcon from "@material-ui/icons/Delete";
-// import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
-// import StoreIcon from "@material-ui/icons/Store";
+import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
+import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
 import { isEmpty } from "ramda";
 import React from "react";
@@ -241,4 +245,18 @@ const AutoRemoveMessage = styled.div`
   color: rgba(0, 0, 0, 0.93);
   font-size:x-small;
   font-weight: bold;
+`;
+
+
+
+const TravelRecordWrapper = styled.div`
+  background-color: #fff;
+
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+`;
+
+const TravelRecordInner = styled.div`
+  padding: 0 16px;
 `;
