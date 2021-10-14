@@ -1,4 +1,9 @@
 import {
+  Button,
+  CardActions,
+  CardHeader,
+
+
   Divider,
   IconButton,
   List,
@@ -24,6 +29,18 @@ import { useBookmarkLocation } from "../../hooks/useBookmark";
 import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
 import { getVenueName } from "../../utils/qr";
+
+
+
+import { Link } from "react-router-dom";
+import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
+import StoreIcon from "@material-ui/icons/Store";
+import BookmarkIcon from "@material-ui/icons/MailOutline";
+import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
+
+
+
+
 
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
