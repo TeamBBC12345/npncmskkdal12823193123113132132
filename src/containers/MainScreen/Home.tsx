@@ -699,12 +699,12 @@ const Item = styled(Card)`
   margin-bottom: 16px;
 `;
 
-const Msg = styled.div`
-  text-align: center;
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 0.875rem;
-  line-height: 48px;
-`;
+// const Msg = styled.div`
+//   text-align: center;
+//   color: rgba(0, 0, 0, 0.54);
+//   font-size: 0.875rem;
+//   line-height: 48px;
+// `;
 
 const Text001 = styled.div`
   /* align-items: flex-start; */
