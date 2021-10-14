@@ -32,6 +32,7 @@ export const TravelRecord = () => {
     removeTravelRecord,
     incognito,
     autoRemoveRecordDay,
+    currentTravelRecord,
   } = useTravelRecord();
   const { language } = useI18n();
   const {
@@ -241,4 +242,16 @@ const AutoRemoveMessage = styled.div`
   color: rgba(0, 0, 0, 0.93);
   font-size:x-small;
   font-weight: bold;
+`;
+
+
+
+
+
+
+
+
+
+const TravelRecordInner = styled.div`
+  padding: 0 16px;
 `;
