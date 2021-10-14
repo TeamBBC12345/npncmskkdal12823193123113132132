@@ -28,6 +28,7 @@ import { getVenueName } from "../../utils/qr";
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
   const {
+    currentTravelRecord,
     pastTravelRecord,
     removeTravelRecord,
     incognito,
@@ -44,6 +45,8 @@ export const TravelRecord = () => {
     <PageWrapper>
       <Header name={t("travel_record.name")} />
       <ContentWrapper>
+
+
         <List component="nav">
           {incognito && (
             <Msg>
@@ -54,6 +57,10 @@ export const TravelRecord = () => {
           {isEmpty(pastTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
           )}
+
+
+
+
           {pastTravelRecord.map((item) => {
             const name = getVenueName(item, language);
             const bookmarkId = getBookmarkLocationId(item);
@@ -103,6 +110,21 @@ export const TravelRecord = () => {
             );
           })}
         </List>
+
+        <List>
+
+        {currentTravelRecord.map((item) => {
+            const bookmarkId = getBookmarkLocationId(item);
+            return ()
+        })}
+
+
+        </List>
+
+
+
+
+
       </ContentWrapper>
       <AutoRemoveMessageLine>
         <div>........</div>
