@@ -19,6 +19,7 @@ import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
 import { isEmpty } from "ramda";
 // import React from "react";
+import { LeaveModal } from "../../components/LeaveModal";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
