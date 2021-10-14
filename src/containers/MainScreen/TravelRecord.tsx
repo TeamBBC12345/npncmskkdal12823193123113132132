@@ -13,7 +13,7 @@ import {
 // import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 // import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
-import { isEmpty } from "ramda";
+// import { isEmpty } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
