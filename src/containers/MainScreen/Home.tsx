@@ -507,10 +507,6 @@ export const Home = () => {
             minHeight: "200px",
             padding: "150px 0px 0px 0px",
           }}>
-
-
-
-          
         <TravelRecordInner>
           <h3>{t("home.you_have_entered")}</h3>
           {isEmpty(currentTravelRecord) && (
@@ -570,9 +566,6 @@ export const Home = () => {
             );
           })}
         </TravelRecordInner>
-
-
-
       </TravelRecordWrapper>
     </PageWrapper>
   );

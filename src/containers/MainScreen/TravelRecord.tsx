@@ -1,5 +1,4 @@
 import {
-  Button,
   Divider,
   IconButton,
   List,
@@ -7,21 +6,18 @@ import {
   ListItemIcon,
   ListItemSecondaryAction,
   ListItemText,
-  CardActions,
-  CardHeader,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import BookmarkIcon from "@material-ui/icons/MailOutline";
-import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
+// import BookmarkIcon from "@material-ui/icons/MailOutline";
+// import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 // import DeleteIcon from "@material-ui/icons/Delete";
-import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
-import StoreIcon from "@material-ui/icons/Store";
+// import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
+// import StoreIcon from "@material-ui/icons/Store";
 import dayjs from "dayjs";
 import { isEmpty } from "ramda";
-// import React from "react";
-import { LeaveModal } from "../../components/LeaveModal";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+
 
 import incognitoIcon from "../../assets/incognito.svg";
 import { Header } from "../../components/Header";
@@ -29,8 +25,6 @@ import { useBookmarkLocation } from "../../hooks/useBookmark";
 import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
 import { getVenueName } from "../../utils/qr";
-
-import React, { useEffect } from "react";
 
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
@@ -40,7 +34,6 @@ export const TravelRecord = () => {
     incognito,
     autoRemoveRecordDay,
   } = useTravelRecord();
-  const { currentTravelRecord, updateTravelRecord } = useTravelRecord();
   const { language } = useI18n();
   const {
     createBookmarkLocation,
@@ -48,118 +41,9 @@ export const TravelRecord = () => {
     removeBookmarkLocation,
   } = useBookmarkLocation();
 
-  const handleLeave = (date: Dayjs) => {
-    if (!leaveId) return;
-    updateTravelRecord(leaveId, {
-      outTime: date.startOf("minute").toISOString(),
-    });
-    setLeaveModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (leaveId) setLeaveModalOpen(true);
-  }, [leaveId]);
-
-  useEffect(() => {
-    if (!leaveModalOpen) setLeaveId(null);
-  }, [leaveModalOpen]);
-
   return (
     <PageWrapper>
-      {leaveId && (
-        <LeaveModal
-          id={leaveId}
-          visible={leaveModalOpen}
-          onDiscard={() => {
-            setLeaveModalOpen(false);
-          }}
-          onFinish={handleLeave}
-        />
-      )}
-
-
-
-
       <Header name={t("travel_record.name")} />
-
-
-
-
-      <TravelRecordWrapper style={{
-            minHeight: "200px",
-            padding: "150px 0px 0px 0px",
-          }}>
-        <TravelRecordInner>
-          <h3>{t("home.you_have_entered")}</h3>
-          {isEmpty(currentTravelRecord) && (
-            <Msg>{t("travel_record.message.empty")}</Msg>
-          )}
-          {currentTravelRecord.map((item) => {
-            const bookmarkId = getBookmarkLocationId(item);
-            return (
-              <Item key={item.id}>
-                <CardHeader
-                  avatar={
-                    item.type === locationType.TAXI ? (
-                      <LocalTaxiIcon />
-                    ) : (
-                      <StoreIcon />
-                    )
-                  }
-                  action={
-                    <IconButton
-                      aria-label="settings"
-                      onClick={() => {
-                        bookmarkId
-                          ? removeBookmarkLocation(bookmarkId)
-                          : createBookmarkLocation(item);
-                      }}
-                    >
-                      {bookmarkId ? <BookmarkIcon /> : <BookmarkBorderIcon />}
-                    </IconButton>
-                  }
-                  title={getVenueName(item, language)}
-                  subheader={`${dayjs(item.inTime).format(
-                    "YYYY-MM-DD HH:mm"
-                  )} - ${
-                    item.outTime
-                      ? dayjs(item.outTime).format("YYYY-MM-DD HH:mm")
-                      : ""
-                  }`}
-                />
-
-                <CardActions disableSpacing>
-                  <Button
-                    size="small"
-                    color="primary"
-                    onClick={() => {
-                      setLeaveId(item.id);
-                    }}
-                  >
-                    {t("global:button.leave")}
-                  </Button>
-                  <Link to={`/confirm/${item.id}`}>
-                    <Button size="small" color="primary">
-                      {t("global:button.confirm_page")}
-                    </Button>
-                  </Link>
-                </CardActions>
-              </Item>
-            );
-          })}
-        </TravelRecordInner>
-      </TravelRecordWrapper>
-
-
-
-
-
-
-
-
-
-
-
       <ContentWrapper>
         <List component="nav">
           {incognito && (
@@ -168,9 +52,9 @@ export const TravelRecord = () => {
               {t("travel_record.message.incognito_activated")}
             </Msg>
           )}
-          {isEmpty(pastTravelRecord) && (
+{/*          {isEmpty(pastTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
-          )}
+          )}*/}
           {pastTravelRecord.map((item) => {
             const name = getVenueName(item, language);
             const bookmarkId = getBookmarkLocationId(item);
@@ -278,18 +162,4 @@ const AutoRemoveMessage = styled.div`
   color: rgba(0, 0, 0, 0.93);
   font-size:x-small;
   font-weight: bold;
-`;
-
-
-
-const TravelRecordWrapper = styled.div`
-  background-color: #fff;
-
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-`;
-
-const TravelRecordInner = styled.div`
-  padding: 0 16px;
 `;
