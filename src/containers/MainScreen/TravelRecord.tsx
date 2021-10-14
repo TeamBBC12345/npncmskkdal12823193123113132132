@@ -1,18 +1,18 @@
 import {
-  Divider,
-  IconButton,
+  // Divider,
+  // IconButton,
   List,
-  ListItem,
-  ListItemIcon,
-  ListItemSecondaryAction,
-  ListItemText,
+  // ListItem,
+  // ListItemIcon,
+  // ListItemSecondaryAction,
+  // ListItemText,
 } from "@material-ui/core";
 // import BookmarkIcon from "@material-ui/icons/MailOutline";
 // import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 // import DeleteIcon from "@material-ui/icons/Delete";
 // import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 // import StoreIcon from "@material-ui/icons/Store";
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 import { isEmpty } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -23,22 +23,22 @@ import { Header } from "../../components/Header";
 import { useBookmarkLocation } from "../../hooks/useBookmark";
 import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
-import { getVenueName } from "../../utils/qr";
+// import { getVenueName } from "../../utils/qr";
 
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
   const {
     currentTravelRecord,
     pastTravelRecord,
-    removeTravelRecord,
+    // removeTravelRecord,
     incognito,
     autoRemoveRecordDay,
   } = useTravelRecord();
-  const { language } = useI18n();
+  // const { language } = useI18n();
   const {
-    createBookmarkLocation,
+    // createBookmarkLocation,
     getBookmarkLocationId,
-    removeBookmarkLocation,
+    // removeBookmarkLocation,
   } = useBookmarkLocation();
 
   return (
@@ -111,7 +111,7 @@ export const TravelRecord = () => {
           })}*/}
 
           {currentTravelRecord.map((item) => {
-            const bookmarkId = getBookmarkLocationId(item);
+            // const bookmarkId = getBookmarkLocationId(item);
             return (
                 <React.Fragment key={item.id}>
                 </React.Fragment>
