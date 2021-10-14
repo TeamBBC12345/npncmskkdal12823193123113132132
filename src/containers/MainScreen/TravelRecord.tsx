@@ -111,7 +111,6 @@ export const TravelRecord = () => {
           })}
         </List>
 
-        <List>
 
         {currentTravelRecord.map((item) => {
             const bookmarkId = getBookmarkLocationId(item);
@@ -120,8 +119,6 @@ export const TravelRecord = () => {
               );
         })}
 
-
-        </List>
 
 
 
