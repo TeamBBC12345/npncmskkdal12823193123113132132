@@ -29,6 +29,8 @@ import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
 import { getVenueName } from "../../utils/qr";
 
+import React, { useEffect } from "react";
+
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
   const {
@@ -45,8 +47,38 @@ export const TravelRecord = () => {
     removeBookmarkLocation,
   } = useBookmarkLocation();
 
+  const handleLeave = (date: Dayjs) => {
+    if (!leaveId) return;
+    updateTravelRecord(leaveId, {
+      outTime: date.startOf("minute").toISOString(),
+    });
+    setLeaveModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (leaveId) setLeaveModalOpen(true);
+  }, [leaveId]);
+
+  useEffect(() => {
+    if (!leaveModalOpen) setLeaveId(null);
+  }, [leaveModalOpen]);
+
   return (
     <PageWrapper>
+      {leaveId && (
+        <LeaveModal
+          id={leaveId}
+          visible={leaveModalOpen}
+          onDiscard={() => {
+            setLeaveModalOpen(false);
+          }}
+          onFinish={handleLeave}
+        />
+      )}
+
+
+
+
       <Header name={t("travel_record.name")} />
 
 
