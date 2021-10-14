@@ -61,7 +61,7 @@ export const TravelRecord = () => {
 
 
 
-          {pastTravelRecord.map((item) => {
+{/*          {pastTravelRecord.map((item) => {
             const name = getVenueName(item, language);
             const bookmarkId = getBookmarkLocationId(item);
             return (
@@ -108,7 +108,7 @@ export const TravelRecord = () => {
                 <Divider />
               </React.Fragment>
             );
-          })}
+          })}*/}
 
           {currentTravelRecord.map((item) => {
             const bookmarkId = getBookmarkLocationId(item);
