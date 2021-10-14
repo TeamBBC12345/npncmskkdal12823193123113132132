@@ -36,8 +36,8 @@ export const TravelRecord = () => {
     removeTravelRecord,
     incognito,
     autoRemoveRecordDay,
-    currentTravelRecord,
   } = useTravelRecord();
+  const { currentTravelRecord, updateTravelRecord } = useTravelRecord();
   const { language } = useI18n();
   const {
     createBookmarkLocation,
