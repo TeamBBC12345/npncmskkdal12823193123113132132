@@ -1,18 +1,18 @@
 import {
-  // Divider,
-  // IconButton,
+  Divider,
+  IconButton,
   List,
-  // ListItem,
-  // ListItemIcon,
-  // ListItemSecondaryAction,
-  // ListItemText,
+  ListItem,
+  ListItemIcon,
+  ListItemSecondaryAction,
+  ListItemText,
 } from "@material-ui/core";
 // import BookmarkIcon from "@material-ui/icons/MailOutline";
 // import BookmarkBorderIcon from "@material-ui/icons/MailOutline";
 // import DeleteIcon from "@material-ui/icons/Delete";
 // import LocalTaxiIcon from "@material-ui/icons/LocalTaxi";
 // import StoreIcon from "@material-ui/icons/Store";
-// import dayjs from "dayjs";
+import dayjs from "dayjs";
 import { isEmpty } from "ramda";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -23,30 +23,107 @@ import { Header } from "../../components/Header";
 import { useBookmarkLocation } from "../../hooks/useBookmark";
 import { useI18n } from "../../hooks/useI18n";
 import { useTravelRecord } from "../../hooks/useTravelRecord";
-// import { getVenueName } from "../../utils/qr";
+import { getVenueName } from "../../utils/qr";
 
 export const TravelRecord = () => {
   const { t } = useTranslation("main_screen");
   const {
-    currentTravelRecord,
     pastTravelRecord,
-    // removeTravelRecord,
+    removeTravelRecord,
     incognito,
     autoRemoveRecordDay,
+    currentTravelRecord,
   } = useTravelRecord();
-  // const { language } = useI18n();
+  const { language } = useI18n();
   const {
-    // createBookmarkLocation,
+    createBookmarkLocation,
     getBookmarkLocationId,
-    // removeBookmarkLocation,
+    removeBookmarkLocation,
   } = useBookmarkLocation();
 
   return (
     <PageWrapper>
       <Header name={t("travel_record.name")} />
+
+
+
+
+      <TravelRecordWrapper style={{
+            minHeight: "200px",
+            padding: "150px 0px 0px 0px",
+          }}>
+        <TravelRecordInner>
+          <h3>{t("home.you_have_entered")}</h3>
+          {isEmpty(currentTravelRecord) && (
+            <Msg>{t("travel_record.message.empty")}</Msg>
+          )}
+          {currentTravelRecord.map((item) => {
+            const bookmarkId = getBookmarkLocationId(item);
+            return (
+              <Item key={item.id}>
+                <CardHeader
+                  avatar={
+                    item.type === locationType.TAXI ? (
+                      <LocalTaxiIcon />
+                    ) : (
+                      <StoreIcon />
+                    )
+                  }
+                  action={
+                    <IconButton
+                      aria-label="settings"
+                      onClick={() => {
+                        bookmarkId
+                          ? removeBookmarkLocation(bookmarkId)
+                          : createBookmarkLocation(item);
+                      }}
+                    >
+                      {bookmarkId ? <BookmarkIcon /> : <BookmarkBorderIcon />}
+                    </IconButton>
+                  }
+                  title={getVenueName(item, language)}
+                  subheader={`${dayjs(item.inTime).format(
+                    "YYYY-MM-DD HH:mm"
+                  )} - ${
+                    item.outTime
+                      ? dayjs(item.outTime).format("YYYY-MM-DD HH:mm")
+                      : ""
+                  }`}
+                />
+
+                <CardActions disableSpacing>
+                  <Button
+                    size="small"
+                    color="primary"
+                    onClick={() => {
+                      setLeaveId(item.id);
+                    }}
+                  >
+                    {t("global:button.leave")}
+                  </Button>
+                  <Link to={`/confirm/${item.id}`}>
+                    <Button size="small" color="primary">
+                      {t("global:button.confirm_page")}
+                    </Button>
+                  </Link>
+                </CardActions>
+              </Item>
+            );
+          })}
+        </TravelRecordInner>
+      </TravelRecordWrapper>
+
+
+
+
+
+
+
+
+
+
+
       <ContentWrapper>
-
-
         <List component="nav">
           {incognito && (
             <Msg>
@@ -57,11 +134,7 @@ export const TravelRecord = () => {
           {isEmpty(pastTravelRecord) && (
             <Msg>{t("travel_record.message.empty")}</Msg>
           )}
-
-
-
-
-{/*          {pastTravelRecord.map((item) => {
+          {pastTravelRecord.map((item) => {
             const name = getVenueName(item, language);
             const bookmarkId = getBookmarkLocationId(item);
             return (
@@ -108,25 +181,8 @@ export const TravelRecord = () => {
                 <Divider />
               </React.Fragment>
             );
-          })}*/}
-
-          {currentTravelRecord.map((item) => {
-            // const bookmarkId = getBookmarkLocationId(item);
-            return (
-                <React.Fragment key={item.id}>
-                </React.Fragment>
-              );
           })}
         </List>
-
-
-
-
-
-
-
-
-
       </ContentWrapper>
       <AutoRemoveMessageLine>
         <div>........</div>
