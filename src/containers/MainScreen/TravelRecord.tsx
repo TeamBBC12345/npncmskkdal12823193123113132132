@@ -63,65 +63,17 @@ export const TravelRecord = () => {
       <Header name={t("travel_record.name")} />
 
 
-      <TravelRecordInner>
-          <h3>{t("home.you_have_entered")}</h3>
-          {isEmpty(currentTravelRecord) && (
-            <Msg>{t("travel_record.message.empty")}</Msg>
-          )}
-          {currentTravelRecord.map((item) => {
-            const bookmarkId = getBookmarkLocationId(item);
-            return (
-              <Item key={item.id}>
-                <CardHeader
-                  avatar={
-                    item.type === locationType.TAXI ? (
-                      <LocalTaxiIcon />
-                    ) : (
-                      <StoreIcon />
-                    )
-                  }
-                  action={
-                    <IconButton
-                      aria-label="settings"
-                      onClick={() => {
-                        bookmarkId
-                          ? removeBookmarkLocation(bookmarkId)
-                          : createBookmarkLocation(item);
-                      }}
-                    >
-                      {bookmarkId ? <BookmarkIcon /> : <BookmarkBorderIcon />}
-                    </IconButton>
-                  }
-                  title={getVenueName(item, language)}
-                  subheader={`${dayjs(item.inTime).format(
-                    "YYYY-MM-DD HH:mm"
-                  )} - ${
-                    item.outTime
-                      ? dayjs(item.outTime).format("YYYY-MM-DD HH:mm")
-                      : ""
-                  }`}
-                />
 
-                <CardActions disableSpacing>
-                  <Button
-                    size="small"
-                    color="primary"
-                    onClick={() => {
-                      setLeaveId(item.id);
-                    }}
-                  >
-                    {t("global:button.leave")}
-                  </Button>
-                  <Link to={`/confirm/${item.id}`}>
-                    <Button size="small" color="primary">
-                      {t("global:button.confirm_page")}
-                    </Button>
-                  </Link>
-                </CardActions>
-              </Item>
-            );
-          })}
-        </TravelRecordInner>
+
+
+      {currentTravelRecord.map((item) => {
+        const bookmarkId = getBookmarkLocationId(item);
+        return (
+        );
+      })}
+
+
+
 
 
 
@@ -148,11 +100,7 @@ export const TravelRecord = () => {
                   <ListItemIcon style={{
                     minWidth: "0px",
                   }}>
-
                   </ListItemIcon>
-
-
-
 
                   <ListItemText
                     primary={name}
@@ -164,10 +112,6 @@ export const TravelRecord = () => {
                         : ""
                     }`}
                   />
-
-
-
-
 
                   <ListItemSecondaryAction>
                     <IconButton
